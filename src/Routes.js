@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Main from "./Pages/Main/Main";
+// import Main from "./Pages/Main/Main";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
 // import Nav from "./Pages/Main/Nav";
@@ -11,7 +11,7 @@ class Routes extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Main} />
+          {/* <Route exact path="/" component={Main} /> */}
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Signup" component={Signup} />
           {/* <Route exact path="/Nav" component={Nav} />
