@@ -1,4 +1,5 @@
-$font-color: #333;
+@import "./src/Common.scss";
+$font-color: $fontDark;
 
 .Login {
     width: 100vw;
@@ -7,7 +8,7 @@ $font-color: #333;
     justify-content: center;
     align-items: center;
 
-    .ModalBody {
+    .modalBody {
         max-width: 550px;
         max-height: 550px;
         min-width: 400px;
@@ -16,7 +17,7 @@ $font-color: #333;
         display: flex;
         flex-direction: column;
         text-align: left;
-        background-color: #fffef2;
+        background-color: $lightColor;
 
         .introduceBox {
             padding: 0 0 30px;
@@ -36,7 +37,7 @@ $font-color: #333;
             font: 16px "Suisse Regular", sans-serif;
         }
 
-        .FormText {
+        .formText {
             width: 100%;
             font: 16px "Suisse Regular", sans-serif;
             margin: 0 0 30px;
@@ -51,7 +52,7 @@ $font-color: #333;
             width: 100%;
         }
 
-        .FormTextInput {
+        .formTextInput {
             width: 100%;
             padding: 8px 0;
             line-height: 1;
@@ -61,7 +62,7 @@ $font-color: #333;
             outline: none;
         }
 
-        .FormTextLabel {
+        .formTextLabel {
             color: #666;
             line-height: 1.75;
             left: 0;
@@ -90,7 +91,7 @@ $font-color: #333;
             background-color: rgb(239, 239, 239);
         }
 
-        .BtnContent {
+        .btnContent {
             color: #fffef2;
         }
 
@@ -98,11 +99,11 @@ $font-color: #333;
             margin: 25px 0 0;
             padding: 21px 23px;
             width: 100%;
-            background: #333;
+            background: $fontDark;
         }
 
         .signUpBtn {
-            color: #fffef2;
+            color: $lightColor;
         }
     }
 }

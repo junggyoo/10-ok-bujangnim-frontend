@@ -31,7 +31,7 @@ class Signup extends Component {
             pwconfirm : e.target.value
         })
 
-        if (e.target.value.length >= 1) {
+        if (e.target.value.length > 0) {
             if (e.target.value === this.state.pw) {
                 this.setState({ pwError: false });
             } else {
@@ -53,27 +53,28 @@ class Signup extends Component {
     }
 
     handleSingUP = (e) => {
-        // this.setState ({
-        //     fetch("", {
-        //         method : 'POST',
-        //         body: JSON.stringify({
-        //             email: this.state.email,
-        //             pw: this.state.pw,
-        //             fistname: this.state.fistname,
-        //             lastname: this.state.lastname
-        //         })
-        //     })
-        //     .then(res => res.json())
-        //     .then(res => {
-        //         if (res.token) {
-        //             localStorage.setItem("aesop", res.token)
-        //             alert("회원가입을 환영합니다.")
-        //             this.props.history.push("/Main")
-        //         } else { 
-        //             alert("이메일과 비밀번호를 확인해주세요.")
-        //         }
-        //     })
-        // })
+        // e.preventDefault();
+        console.log(this.state.email,this.state.pw,this.state.firstname, this.state.lastname);
+        fetch("http://10.58.5.206:8000/user/sign-up", {
+                method: 'POST',
+                body: JSON.stringify({
+                    email: this.state.email,
+                    password: this.state.pw,
+                    first_name: this.state.firstname,
+                    last_name: this.state.lastname
+                })
+            })
+            .then(res => res.json())
+            .then(res => {
+                console.log(res)
+                if (res.token) {
+                    localStorage.setItem("aesop", res.token)
+                    alert("회원가입을 환영합니다.")
+                    this.props.history.push("/Main")
+                } else { 
+                    alert("이메일과 비밀번호를 확인해주세요.")
+                }
+            })
     }
 
     handleHaveAccount = (e) => {
@@ -82,56 +83,55 @@ class Signup extends Component {
 
 
     render() {
-        console.log(this.state)
         return(
             <div className="Signup">
-                <form className="LoginForm">
-                    <div className="ModalheadingWrap">
-                        <h2 className="ModalTitle">
+                <form className="loginForm">
+                    <div className="modalheadingWrap">
+                        <h2 className="modalTitle">
                             처음 만나 뵙게 되네요. 이솝에 오신 것을 환영합니다.
                         </h2>
-                        <div className="ModalSubTitle">
+                        <div className="modalSubTitle">
                             계정을 만들려면 아래에 세부 정보를 입력하십시오.
                         </div>
                     </div>
-                    <div className="FormRow">
-                        <div className="FormText">
+                    <div className="formRow">
+                        <div className="formText">
                             <label>
-                                <input onChange={this.hadleValueEmail} className="FormTextInput" name="email" placeholder="이메일 주소" type="email" />
+                                <input onChange={this.hadleValueEmail} className="formTextInput" name="email" placeholder="이메일 주소" type="email" />
                                 {/* <span className="FormTextlabel">이메일 주소</span> */}
                             </label>
                         </div>
                     </div>
                     <div>
-                        <div className="FormRow">
-                            <div className="FormText">
+                        <div className="formRow">
+                            <div className="formText">
                                 <label>
-                                    <input onChange={this.hadleValuePW} className="FormTextInput" name="password" placeholder="패스워드" type="password" />
+                                    <input onChange={this.hadleValuePW} className="formTextInput" name="password" placeholder="패스워드" type="password" />
                                     {/* <span className="FormText-label">패스워드</span> */}
                                 </label>
                             </div>
                         </div>
-                        <div className="FormRow">
-                            <div className="FormText">
+                        <div className="formRow">
+                            <div className="formText">
                                 <label>
-                                    <input onChange={this.hadleValuepwConFirm} className="FormTextInput" name="passwordConfirm" placeholder="패스워드 확인" type="password" />
-                                    <div className={this.state.pwError ? "ErrorMessage" : "noneErrorTextMessage"}>
+                                    <input onChange={this.hadleValuepwConFirm} className="formTextInput" name="passwordConfirm" placeholder="패스워드 확인" type="password" />
+                                    <div className={this.state.pwError ? "errorMessage" : "noneErrorTextMessage"}>
                                         이전에 사용했던 패스워드를 입력하세요.
                                     </div>
                                     {/* <span className="FormText-label">패스워드 확인</span> */}
                                 </label>
                             </div>
                         </div>
-                        <div className="FormRowbox">
-                            <div className="FormTextLoginName">
+                        <div className="formRowbox">
+                            <div className="formTextLoginName">
                                     <label>
-                                        <input onChange={this.hadleValueFirstName} className="FormTextInput" maxLength="100" name="firstName" placeholder="성" type="text" />
+                                        <input onChange={this.hadleValueFirstName} className="formTextInput" maxLength="100" name="firstName" placeholder="성" type="text" />
                                         {/* <span className="FormText-label">성</span> */}
                                     </label>                   
                             </div>
-                            <div className="FormTextLoginName">
+                            <div className="formTextLoginName">
                                     <label>
-                                        <input onChange={this.hadleValueLastName} className="FormTextInput" maxlength="100" name="LastName" placeholder="이름" type="text" />
+                                        <input onChange={this.hadleValueLastName} className="formTextInput" maxLength="100" name="LastName" placeholder="이름" type="text" />
                                         {/* <span className="FormText-label">이름</span> */}
                                     </label>
                             </div>
@@ -142,8 +142,8 @@ class Signup extends Component {
                             <span className="btnLabel">등록</span>
                         </div>
                     </button>
-                    <div className="LoginHaveAccount">
-                        <button onClick={this.handleHaveAccount} className="LoginHaveAccountBTN">
+                    <div className="loginHaveAccount">
+                        <button onClick={this.handleHaveAccount} className="loginHaveAccountBTN">
                             이솝 계정을 가지고 계십니까?
                         </button>
                     </div>
