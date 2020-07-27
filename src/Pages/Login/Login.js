@@ -25,7 +25,7 @@ class Login extends Component {
 
     // 로그인용 버튼
     hadleBtn = (e) => {
-        fetch("http://10.58.5.206:8000/user/sign-in", {
+        fetch("http://10.58.5.36:8000/user/sign-in", {
             method: 'POST',
             body: JSON.stringify({
                 email: this.state.email,

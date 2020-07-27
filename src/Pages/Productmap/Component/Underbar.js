@@ -10,11 +10,11 @@ class Underbar extends Component {
     }
 
     componentDidMount() {
-        // fetch("http://localhost:3000/data/mocup.json")
-        //     .then(res => res.json())
-        //     .then(res => {
-        //         this.setState({products : res})
-        //     })
+        fetch("http://localhost:3000/data/mocup.json")
+            .then(res => res.json())
+            .then(res => {
+                this.setState({products : res})
+            })
     }
 
     render() {

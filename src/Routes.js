@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Pages/Main/Main";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Login/Signup";
-import Nav from "./Pages/Main/Nav";
+import Nav from "./Components/Nav/Nav";
 import Mapcomponent from "./Pages/Productmap/Mapcomponent";
 import ProductList from "./Pages/ProductList/ProductList";
 import Productdetails from "./Pages/Product/Productdetails";
