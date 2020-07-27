@@ -1,0 +1,54 @@
+@import "./src/Common.scss";
+
+.Sliderintro {
+  width: 400px;
+  height: 530px;
+  padding: 25px 10px 70px 25px;
+
+  .introDescription {
+    margin: 202px 0 0;
+    padding: 0 0 50px;
+
+    .descriptionBtn {
+      background-color: inherit;
+      border: none;
+      margin-bottom: 15px;
+
+      .descriptionName {
+        font-weight: normal;
+        color: $fontDark;
+        font-size: x-large;
+      }
+    }
+
+    .descriptionInfo {
+      font-weight: normal;
+      color: $fontDark;
+      line-height: 1.6;
+    }
+  }
+
+  .productAllView {
+    &Btn {
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+
+      .productAllViewBox {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        .productText {
+          font-weight: normal;
+          color: $fontDark;
+        }
+
+        .productAllViewIcon {
+          width: 13px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
