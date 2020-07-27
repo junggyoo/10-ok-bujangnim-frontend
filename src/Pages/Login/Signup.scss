@@ -1,0 +1,171 @@
+@import "./src/Common.scss";
+$font-family: "Suisse Regular", sans-serif;
+
+.Signup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginForm {
+        // @media (min-width: 640px) {
+        //     margin: 0 auto;
+        //     max-width: 550px;
+        //     padding: 50px;
+        // }
+        background-color: $lightColor;
+        padding: 50px;
+        max-width: 550px;
+        border: 1px solid black;
+
+        .modalheadingWrap {
+            padding-bottom: 30px;
+        }
+
+            .modalTitle {
+                color: #252525;
+                font-size: 26px;
+                font-family: $font-family;
+                padding: 40px 0 10px;
+                width: 100%;
+                line-height: 1.54;
+                margin: 0;
+            }
+
+            .modalSubTitle {
+                color: #666666;
+                font-size: 16px;
+                font-family: $font-family;
+            }
+    }
+
+    .formRow { 
+        margin: 0 -10px;
+        position: relative;
+
+        .formText {
+            padding: 8px 0;
+            margin: 0 0 35px;
+            padding: 35px 10px 0;
+            position: relative;
+        
+            .formTextInput {
+                background-color: transparent;
+                padding: 8px 0;
+                width: 100%;
+                height: 40px;
+                line-height: 1px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid;
+            }
+
+            .formTextlabel {
+                position: absolute;
+                left: 0;
+                top: 5;
+                font-family: $font-family;
+            }
+
+            .errorMessage {
+                font-size: 14px;
+                font-family: $font-family;
+                line-height: 1.4;
+                color: #ea6956;
+                margin: 10px 0;
+                display: block;
+            }
+
+            .noneErrorTextMessage {
+                font-size: 14px;
+                font-family: $font-family;
+                line-height: 1.4;
+                color: #ea6956;
+                margin: 10px 0;
+                display: none;
+            }
+        }
+    }
+
+    .formRowbox {
+        margin: 0 -10px;
+        flex-basis: 40%;
+        display: flex;
+        align-items: flex-start;
+    
+        .formTextLoginName {
+            margin: 0 0 35px;
+            padding: 35px 10px 0;
+        }
+
+            .formTextInput {
+                background-color: transparent;
+                padding: 8px 0;
+                width: 100%;
+                height: 40px;
+                line-height: 1px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid;
+            }
+    }
+
+    .btnSingUPActive {
+        width: 100%;
+        margin-top: 25px;
+        padding: 21px 23px;
+        outline: none;
+        border: none;
+        background-color: $fontDark;
+
+        .btnContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+            .btnLabel {
+                font-size: 14px;
+                color: $lightColor;
+                font-family: $font-family;
+            }
+    }
+
+    .btnSignUPunActive {
+        width: 100%;
+        margin-top: 25px;
+        padding: 21px 23px;
+        outline: none;
+        border: none;
+        background-color: #999;
+
+        .btnContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+            .btnLabel {
+                font-size: 14px;
+                color: $lightColor;
+                font-family: $font-family;
+            }
+    }
+
+    .loginHaveAccount {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+
+        .loginHaveAccountBTN {
+            background-color: inherit;
+            color: #666666;
+            font-size: 14px;
+            font-family: $font-family;
+            outline: none;
+            border: none;
+            padding: 0;
+        }
+    }
+}
