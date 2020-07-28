@@ -8,7 +8,8 @@ class Mapgoods extends Component {
         super();
         this.state = {
             products : [],
-            btnChange: true
+            btnChange: true,
+            display: null,
         }
     }
 
@@ -21,18 +22,30 @@ class Mapgoods extends Component {
     }
 
     hadleChangeBtn = (e) => {
-        e.preventDefault();
         this.setState ({
             btnChange : false
         });
-        console.log(this.setState)
     }
+
+    hoverOverChange = (e) => {
+        this.setState({
+            display: true    
+        });    
+    }
+
+    hoverOutChange = (e) => {
+            this.setState({
+                display : false
+        })
+    }
+
 
     render() {
         return (
             <>
             {this.state.products.map(el => (
-                <div className="subcategoryProducts">
+                <div onMouseOver={this.hoverOverChange} onMouseOut={this.hoverOutChange} className={this.state.display ?
+                    `hoverState subcategoryProducts `: `none subcategoryProducts`}>
                     <div className="subcatProductWrapper">
                         <div className="pictureImgLinkControl">
                             <Link className="pictureImgLinkTag" to="">
@@ -65,8 +78,9 @@ class Mapgoods extends Component {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="productWrapper">
-                                    <button className="Btn" type="button">
+                                <div className={this.state.display? 
+                                    `hoverState productWrapper` : `nonehoverState productWrapper`} >
+                                    <button className="productCartBtn" type="button">
                                         <div className="btnContent">
                                             <span onClick={this.hadleChangeBtn} className={this.state.btnChange ? "btnLabel" : "noneBtnLabel"}>카트에 추가 — {el.price}</span>
                                             <span className={this.state.btnChange ? "btnLabelAction" : "nonebtnLabelAction" }>카트에 추가됨</span>

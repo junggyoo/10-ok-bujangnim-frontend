@@ -53,8 +53,6 @@ class Signup extends Component {
     }
 
     handleSingUP = (e) => {
-        // e.preventDefault();
-        console.log(this.state.email,this.state.pw,this.state.firstname, this.state.lastname);
         fetch("http://10.58.5.36/user/sign-up", {
                 method: 'POST',
                 body: JSON.stringify({

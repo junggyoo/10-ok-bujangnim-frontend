@@ -5,6 +5,7 @@ import Login from "./Pages/Login/Login";
 import Sign from "./Pages/Login/Signup";
 import ProductList from "./Pages/ProductList/ProductList";
 import Productdetails from "./Pages/Product/Productdetails";
+import Mapcomponent from "./Pages/Productmap/Mapcomponent";
 
 class Routes extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Routes extends React.Component {
           <Route exact path="/" component={Main} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Signup" component={Sign} />
+          <Route exact path="/Mapcomponent" component={Mapcomponent} />
           <Route exact path="/skin" component={ProductList} />
           <Route exact path="/skin/details" component={Productdetails} />
         </Switch>
