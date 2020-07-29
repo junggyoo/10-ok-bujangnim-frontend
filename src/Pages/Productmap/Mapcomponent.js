@@ -8,8 +8,17 @@ class Mapcomponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-        }
+            products:[]
+        };
     }  
+
+    componentDidMount() {
+        fetch("http://localhost:3000/data/mocup.json")
+            .then(res => res.json())
+            .then(res => {
+                this.setState({products : res.products})
+            })
+    }
 
 
     render() {
@@ -25,17 +34,9 @@ class Mapcomponent extends Component {
                                 각질, 불필요한 유분 그리고 기타 잔여물을 말끔히 씻어내어 피부를 깨끗하게 하는 것은 인텔리전트 스킨케어의 기초입니다.
                             </p>
                         </div>
-                        {/* 있어서 만들긴했는데, 왜 있는지 모르겠는 기능 */}
-                        {/* <div className="introCategoryLinkBOX">
-                            <link className="introCategoryLink" href="_blank">
-                                <div className="introCategoryBOXWrapper">
-                                    <span className=introCategoryTEXT" />
-                                </div>
-                            </link>
-                        </div> */}
                     </div>
-                    <Mapgoods></Mapgoods>
-                    <Underbar className="underbarcontrol"></Underbar>
+                    <Mapgoods products={this.state.products} />
+                    <Underbar products={this.state.products} />
                 </div> 
             </div>
         )
