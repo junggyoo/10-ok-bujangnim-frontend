@@ -8,6 +8,8 @@ $font-family: "Suisse Regular", sans-serif;
   height: 370px;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 5;
 
   .nextpageWrapper {
     padding: 40px;

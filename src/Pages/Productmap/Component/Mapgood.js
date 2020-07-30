@@ -95,7 +95,7 @@ class Mapgood extends Component {
                                             카트에 추가 — {product.size[0].price}
                                         </div>
                                         <span className={this.state.btnChange ? "btnLabelAction" : "nonebtnLabelAction" }>카트에 추가됨</span>
-                                        <span className="loadingIndicatorLight"></span>
+                                        {/* <span className="loadingIndicatorLight"></span> */}
                                     </div>
                                 </button>
                             </div>

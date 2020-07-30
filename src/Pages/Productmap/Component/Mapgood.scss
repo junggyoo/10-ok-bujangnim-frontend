@@ -144,16 +144,17 @@ $font-family: "Suisse Regular", sans-serif;
           }
 
           .btnLabelAction {
+            display: hidden;
             transform: translateY(100%);
-            display: block;
+            opacity: 0;
             transition: all 1s;
             font-family: "Suisse Medium", sans-serif;
           }
 
           .noneBtnLabelAction {
             background-color: #999;
-            // opacity: 0;
-            // transform: translateY(100%);
+            opacity: 0;
+            transform: translateY(-200%);
             display: none;
             transition: all 1s;
             font-family: "Suisse Medium", sans-serif;
