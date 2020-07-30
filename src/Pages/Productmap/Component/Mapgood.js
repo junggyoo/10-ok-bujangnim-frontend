@@ -32,7 +32,6 @@ class Mapgood extends Component {
 
     render() {
         const product = this.props.product;
-    console.log(this.props.product);
         return(
             <div onMouseOver={this.hoverOverChange} onMouseOut={this.hoverOutChange} className={this.state.display ?
                 `hoverState subcategoryProducts `: `nonehoverState subcategoryProducts`}>

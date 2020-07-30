@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../../Components/Nav/Nav";
-import Productfilternav from "../../Components/Productfilternav";
+// import Productfilternav from "../../Components/Productfilternav";
 import Mapcomponent from "./Component/Mapcomponent";
 import Footer from "../../Components/Footer/Footer";
 import "./Maplist.scss";
