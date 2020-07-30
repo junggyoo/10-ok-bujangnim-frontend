@@ -11,16 +11,17 @@ class Mapcomponent extends Component {
     }  
 
     render() {
-        const products = this.props.products;
-        const categoryInfo= products[0].category_info;
-        const goods = products[0].products;
+        const goods = this.props.goods;
+        const categoryInfo= goods.category_info;
+        const sales = goods.products;
+        const nextpage = goods.next_category;
         return(
             <>
                 <section className="Mapcomponent">
                     <Mapcategoryinfo categoryInfo={categoryInfo} />
-                    <Mapgoods goods={goods} />    
+                    <Mapgoods sales={sales} />    
                 </section>
-                <Underbar products={products} />
+                <Underbar nextpage={nextpage} />
             </>
         )
     }

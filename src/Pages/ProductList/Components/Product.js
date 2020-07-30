@@ -4,12 +4,13 @@ import "./Product.scss";
 
 class Product extends React.Component {
   render() {
-    const { name, size, price, image } = this.props;
+    const { name, clickHandler, size, price, image_url, key, id } = this.props;
+
     return (
-      <div className="Product">
+      <div className="Product" key={key} onClick={() => clickHandler(id)}>
         <div className="imgContainer">
           <Link to="/skin/details">
-            <img src={image} />
+            <img src={image_url} alt="" />
           </Link>
         </div>
         <div className="productInfo">

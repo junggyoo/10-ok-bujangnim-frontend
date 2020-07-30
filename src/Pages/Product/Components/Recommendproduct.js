@@ -5,7 +5,6 @@ import "./Recommendproduct.scss";
 class Recommendproduct extends React.Component {
   render() {
     const { id, title, content, name, image } = this.props;
-    console.log(id, image);
     return (
       <div className="Recommendproduct">
         <div className="imgContainer">

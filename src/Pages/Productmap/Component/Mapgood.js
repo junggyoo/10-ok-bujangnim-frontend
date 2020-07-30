@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+// import { withRouter } from "react-router-dom";
 import "./Mapgood.scss";
 
 class Mapgood extends Component {
@@ -11,16 +12,24 @@ class Mapgood extends Component {
         }
     }
 
+    
+
     hadleChangeBtn = (e) => {
         this.setState ({
             btnChange : false
         });
-    }
+        setTimeout(() => {
+            this.setState({
+                btnChange:true
+            })
+        }, 700); 
+    } 
+    
 
     hoverOverChange = (e) => {
         this.setState({
             display: true
-        });
+        })
     }
 
     hoverOutChange = (e) => {
@@ -38,6 +47,7 @@ class Mapgood extends Component {
                 <div className="subcatProductWrapper">
                     <div className="pictureImgLinkControl">
                         <Link className="pictureImgLinkTag" to="">
+                        {/* <Link className="pictureImgLinkTag" to={product.history.push(`/Maplist/${Mapgood.id}`)}> */}
                             <div className="productPicture">
                                 <img className="pictureImg" src={product.image_url} alt=""></img>
                             </div>
@@ -47,9 +57,9 @@ class Mapgood extends Component {
                         <Link className="textdeco" to="" >
                             <h5 className="productSizePriceName">{product.name}</h5>
                             <div className="productSizePriceInfo">
-                                <span>{product.size.size}</span>
-                                <span className="spanSlash">/</span>
-                                <span>{product.size.price}</span>
+                                    <span>{product.size[0].size}</span>
+                                    <span className="spanSlash">/</span>
+                                    <span>{product.size[0].price}</span>
                             </div>
                         </Link>
                     </div>
@@ -59,7 +69,17 @@ class Mapgood extends Component {
                                 <ul className="productList">
                                     <li className="productDetailsListItem">
                                         <div className="productDetailsTitle">피부 타입</div>
-                                        <div className="productDetailsContent">{product.skin_types.name}</div>
+                                        <div className="productDetailsContent">
+                                            {product.skin_types.map((el) => {
+                                                const num = product.skin_types.length - 1;
+                                                const lastEl = product.skin_types[num];
+                                                    if (el === lastEl) {
+                                                        return `${el.name}`;
+                                                    } else {
+                                                        return `${el.name}, `;
+                                                    }
+                                            })}
+                                        </div>
                                     </li>
                                     <li className="productDetailsListItem">
                                         <div className="productDetailsTitle">사용감</div>
@@ -71,7 +91,9 @@ class Mapgood extends Component {
                                 `hoverState productWrapper` : `nonehoverState productWrapper`} >
                                 <button className="productCartBtn" type="button">
                                     <div className="btnContent">
-                                        <span onClick={this.hadleChangeBtn} className={this.state.btnChange ? "btnLabel" : "noneBtnLabel"}>카트에 추가 — {product.size.price}</span>
+                                        <div onClick={this.hadleChangeBtn} className={this.state.btnChange ? "btnLabel" : "noneBtnLabel"}>
+                                            카트에 추가 — {product.size[0].price}
+                                        </div>
                                         <span className={this.state.btnChange ? "btnLabelAction" : "nonebtnLabelAction" }>카트에 추가됨</span>
                                         <span className="loadingIndicatorLight"></span>
                                     </div>

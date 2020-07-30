@@ -28,8 +28,8 @@ class Login extends Component {
         fetch("http://10.58.5.36:8000/user/sign-in", {
             method: 'POST',
             body: JSON.stringify({
-                email: this.state.email,
-                password: this.state.pw
+                email: login.email,
+                password: login.pw
             })})
             .then(res => res.json())
             .then(res => {
@@ -49,6 +49,7 @@ class Login extends Component {
     }
 
   render() {
+      const {login} = this.state;
     return (
         <div className="Login">
             <div className="modalBody">
@@ -59,13 +60,12 @@ class Login extends Component {
             <div className="formText">
                 <label>
                     <input onChange={this.hadleValueID} className="formTextInput" name="email" placeholder="이메일 주소"  />
-                    {/* <span className="FormTextLabel">이메일 주소</span> 이부분은 애니메이션이 요구됨. 해결방안이 시급. */}
                 </label>
             </div>
             <div className="formText">
                 <input onChange={this.hadleValuePW} className="formTextInput" type="Password" placeholder="비밀번호"/>
             </div>
-            <button onClick={this.hadleBtn} type="button" className={this.state.email.length > 5 && this.state.pw.length > 5 ? "activeBTN" : "unactiveBTN"}>
+            <button onClick={this.hadleBtn} type="button" className={login.email.length > 5 && login.pw.length > 5 ? "activeBTN" : "unactiveBTN"}>
                 <div className="btnContent">
                     로그인
                 </div>

@@ -3,20 +3,22 @@ import "./Sliderintro.scss";
 
 class Sliderintro extends React.Component {
   render() {
-    const { catagoryname, catagorydescription, catagoryallview } = this.props;
+    const { name, description, catagoryallview } = this.props;
 
     return (
       <div className="Sliderintro">
         <div className="introDescription">
           <button className="descriptionBtn">
-            <h2 className="descriptionName">{catagoryname}</h2>
+            <h2 className="descriptionName">{name}</h2>
           </button>
-          <p className="descriptionInfo">{catagorydescription}</p>
+          <p className="descriptionInfo">{description}</p>
         </div>
         <div className="productAllView">
           <button className="productAllViewBtn">
             <div className="productAllViewBox">
-              <span className="productText">{catagoryallview}</span>
+              <span className="productText">
+                {name} 모두 보기 ({catagoryallview})
+              </span>
               <svg
                 aria-labelledby="43703d45-f029-42d7-b9d2-fa44f1382775"
                 className="productAllViewIcon"

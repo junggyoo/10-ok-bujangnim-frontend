@@ -1,0 +1,219 @@
+{
+  "result": "SUCCESS",
+  "data": {
+    "item": [
+      {
+        "id": 1,
+        "category_id": 1,
+        "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
+        "name": "아이 리무버",
+        "description": "눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가 포함된 부드러운 오일 제형의 아이 메이크업 리무브",
+        "skin_types": [
+          {
+            "name": "모든 피부"
+          },
+          {
+            "name": "메이크업을 한 피부"
+          }
+        ],
+        "usability": "진정된, 생기있는",
+        "main_ingredient": "그레이프 씨드, 토코페롤, 마트리카리아꽃오일",
+        "size": [
+          {
+            "id": 1,
+            "size": "60 mL",
+            "price": "₩ 30,000"
+          }
+        ],
+        "ingredient": "포도씨오일, 토코페롤, 마트리카리아꽃오일\n",
+        "sub_image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-Hybris-Secondary-Texture-50-50-Mobile-640x640px.jpg?context=bWFzdGVyfGltYWdlc3wxMjAwM3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGZhLzkzOTI2MjMzNTM4ODYuanBnfDgxZGVhNmNiZTM2YWQxMTY0OTdlMWFjMThiZWIxZjkyNGJiY2ZiYjczMTRiN2FmMTliMjIwNmRiNDk1OTRhOTA",
+        "method": "젖은 화장솜에 덜어 아이 메이크업 제품이 용해될 때까지 기다렸다 닦아냅니다",
+        "amount": "5-7방울",
+        "texture": "가벼운, 오일 타입",
+        "scent": "허브향, 플로랄, 너티",
+        "recommendation_desctiption": "퓨리파잉 페이셜 크림 클렌저에 섞어 사용하여 데일리 클렌저로 사용할 수 있습니다. 세안 후 피부의 영양 공급 및 보충을 위해, 파슬리 씨드 안티 옥시던트 하이드레이터를 사용해보세요. 밤에는 파슬리 씨드 안티 옥시던트 아이 세럼을 사용하여 민감한 눈 주위 피부에 수분과 활력을 선사하세요.",
+        "recommendation_items": [
+          {
+            "id": 3,
+            "product": "퓨리파잉 페이셜 크림 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Purifying-Facial-Cream-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxNjM2MDR8aW1hZ2UvcG5nfGltYWdlcy9oZmQvaGFlLzg3OTc0NDY1MDQ0NzgucG5nfDM0ZmFlMGFiYWI1MjBjZGFiNDZmNmUxMzRiMWM3ZjNmYTgxNTk1YjY0MThkZjliNDYyZTdlNDcyMTFhODM4Mjc "
+          },
+          {
+            "id": 54,
+            "product": "비 앤 티 밸런싱 토너",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-B-Tea-Balancing-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTk2MzZ8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaDM2Lzg4MDc0MTc4Mzk2NDYucG5nfGU1ODAxYzNjMzI3MzY4ZTVlOGI0YjBmNmY2NzNkY2VlOWFkMzlmNGE0ZWJkYjFiMzgzNjlhMWVmNGYxODgyODA "
+          },
+          {
+            "id": 51,
+            "product": "카멜리아 너트 페이셜 하이드레이팅 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Camellia-Nut-Facial-Hydrating-Cream-60mL-small.png?context=bWFzdGVyfGltYWdlc3w5NDEzOXxpbWFnZS9wbmd8aW1hZ2VzL2g4Ni9oMjcvODc5Nzc3NDI1MDAxNC5wbmd8YjBmMWUwY2UxOGMwZWYyNzdiODk3ODVlMDBkYmZkZjhjM2Y0OWY0MmRkMDM0MGMxYmNiZjk5NTA0MWEwNTJjOQ "
+          },
+          {
+            "id": 44,
+            "product": "파슬리 씨드 안티 옥시던트 아이 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Eye-Cream-10mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTE0Njl8aW1hZ2UvcG5nfGltYWdlcy9oN2UvaDM3Lzg3OTc0NDU4MTYzNTAucG5nfDY2OWY1MTc2ZGE3MDk5YWMxZGU5NjgwYTEzYzJhYzFmZDgzNTk2NWJlNmQ0YzRjYzdlOTc4OTNiNWUxOTFlOTM "
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "category_id": 1,
+        "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
+        "name": "아이 리무버",
+        "description": "눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가 포함된 부드러운 오일 제형의 아이 메이크업 리무브",
+        "skin_types": [
+          {
+            "name": "모든 피부"
+          },
+          {
+            "name": "메이크업을 한 피부"
+          }
+        ],
+        "usability": "진정된, 생기있는",
+        "main_ingredient": "그레이프 씨드, 토코페롤, 마트리카리아꽃오일",
+        "size": [
+          {
+            "id": 1,
+            "size": "60 mL",
+            "price": "₩ 30,000"
+          }
+        ],
+        "ingredient": "포도씨오일, 토코페롤, 마트리카리아꽃오일\n",
+        "sub_image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-Hybris-Secondary-Texture-50-50-Mobile-640x640px.jpg?context=bWFzdGVyfGltYWdlc3wxMjAwM3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGZhLzkzOTI2MjMzNTM4ODYuanBnfDgxZGVhNmNiZTM2YWQxMTY0OTdlMWFjMThiZWIxZjkyNGJiY2ZiYjczMTRiN2FmMTliMjIwNmRiNDk1OTRhOTA",
+        "method": "젖은 화장솜에 덜어 아이 메이크업 제품이 용해될 때까지 기다렸다 닦아냅니다",
+        "amount": "5-7방울",
+        "texture": "가벼운, 오일 타입",
+        "scent": "허브향, 플로랄, 너티",
+        "recommendation_desctiption": "퓨리파잉 페이셜 크림 클렌저에 섞어 사용하여 데일리 클렌저로 사용할 수 있습니다. 세안 후 피부의 영양 공급 및 보충을 위해, 파슬리 씨드 안티 옥시던트 하이드레이터를 사용해보세요. 밤에는 파슬리 씨드 안티 옥시던트 아이 세럼을 사용하여 민감한 눈 주위 피부에 수분과 활력을 선사하세요.",
+        "recommendation_items": [
+          {
+            "id": 3,
+            "product": "퓨리파잉 페이셜 크림 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Purifying-Facial-Cream-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxNjM2MDR8aW1hZ2UvcG5nfGltYWdlcy9oZmQvaGFlLzg3OTc0NDY1MDQ0NzgucG5nfDM0ZmFlMGFiYWI1MjBjZGFiNDZmNmUxMzRiMWM3ZjNmYTgxNTk1YjY0MThkZjliNDYyZTdlNDcyMTFhODM4Mjc "
+          },
+          {
+            "id": 54,
+            "product": "비 앤 티 밸런싱 토너",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-B-Tea-Balancing-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTk2MzZ8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaDM2Lzg4MDc0MTc4Mzk2NDYucG5nfGU1ODAxYzNjMzI3MzY4ZTVlOGI0YjBmNmY2NzNkY2VlOWFkMzlmNGE0ZWJkYjFiMzgzNjlhMWVmNGYxODgyODA "
+          },
+          {
+            "id": 51,
+            "product": "카멜리아 너트 페이셜 하이드레이팅 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Camellia-Nut-Facial-Hydrating-Cream-60mL-small.png?context=bWFzdGVyfGltYWdlc3w5NDEzOXxpbWFnZS9wbmd8aW1hZ2VzL2g4Ni9oMjcvODc5Nzc3NDI1MDAxNC5wbmd8YjBmMWUwY2UxOGMwZWYyNzdiODk3ODVlMDBkYmZkZjhjM2Y0OWY0MmRkMDM0MGMxYmNiZjk5NTA0MWEwNTJjOQ "
+          },
+          {
+            "id": 44,
+            "product": "파슬리 씨드 안티 옥시던트 아이 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Eye-Cream-10mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTE0Njl8aW1hZ2UvcG5nfGltYWdlcy9oN2UvaDM3Lzg3OTc0NDU4MTYzNTAucG5nfDY2OWY1MTc2ZGE3MDk5YWMxZGU5NjgwYTEzYzJhYzFmZDgzNTk2NWJlNmQ0YzRjYzdlOTc4OTNiNWUxOTFlOTM "
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "category_id": 1,
+        "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
+        "name": "아이 리무버",
+        "description": "눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가 포함된 부드러운 오일 제형의 아이 메이크업 리무브",
+        "skin_types": [
+          {
+            "name": "모든 피부"
+          },
+          {
+            "name": "메이크업을 한 피부"
+          }
+        ],
+        "usability": "진정된, 생기있는",
+        "main_ingredient": "그레이프 씨드, 토코페롤, 마트리카리아꽃오일",
+        "size": [
+          {
+            "id": 1,
+            "size": "60 mL",
+            "price": "₩ 30,000"
+          }
+        ],
+        "ingredient": "포도씨오일, 토코페롤, 마트리카리아꽃오일\n",
+        "sub_image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-Hybris-Secondary-Texture-50-50-Mobile-640x640px.jpg?context=bWFzdGVyfGltYWdlc3wxMjAwM3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGZhLzkzOTI2MjMzNTM4ODYuanBnfDgxZGVhNmNiZTM2YWQxMTY0OTdlMWFjMThiZWIxZjkyNGJiY2ZiYjczMTRiN2FmMTliMjIwNmRiNDk1OTRhOTA",
+        "method": "젖은 화장솜에 덜어 아이 메이크업 제품이 용해될 때까지 기다렸다 닦아냅니다",
+        "amount": "5-7방울",
+        "texture": "가벼운, 오일 타입",
+        "scent": "허브향, 플로랄, 너티",
+        "recommendation_desctiption": "퓨리파잉 페이셜 크림 클렌저에 섞어 사용하여 데일리 클렌저로 사용할 수 있습니다. 세안 후 피부의 영양 공급 및 보충을 위해, 파슬리 씨드 안티 옥시던트 하이드레이터를 사용해보세요. 밤에는 파슬리 씨드 안티 옥시던트 아이 세럼을 사용하여 민감한 눈 주위 피부에 수분과 활력을 선사하세요.",
+        "recommendation_items": [
+          {
+            "id": 3,
+            "product": "퓨리파잉 페이셜 크림 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Purifying-Facial-Cream-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxNjM2MDR8aW1hZ2UvcG5nfGltYWdlcy9oZmQvaGFlLzg3OTc0NDY1MDQ0NzgucG5nfDM0ZmFlMGFiYWI1MjBjZGFiNDZmNmUxMzRiMWM3ZjNmYTgxNTk1YjY0MThkZjliNDYyZTdlNDcyMTFhODM4Mjc "
+          },
+          {
+            "id": 54,
+            "product": "비 앤 티 밸런싱 토너",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-B-Tea-Balancing-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTk2MzZ8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaDM2Lzg4MDc0MTc4Mzk2NDYucG5nfGU1ODAxYzNjMzI3MzY4ZTVlOGI0YjBmNmY2NzNkY2VlOWFkMzlmNGE0ZWJkYjFiMzgzNjlhMWVmNGYxODgyODA "
+          },
+          {
+            "id": 51,
+            "product": "카멜리아 너트 페이셜 하이드레이팅 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Camellia-Nut-Facial-Hydrating-Cream-60mL-small.png?context=bWFzdGVyfGltYWdlc3w5NDEzOXxpbWFnZS9wbmd8aW1hZ2VzL2g4Ni9oMjcvODc5Nzc3NDI1MDAxNC5wbmd8YjBmMWUwY2UxOGMwZWYyNzdiODk3ODVlMDBkYmZkZjhjM2Y0OWY0MmRkMDM0MGMxYmNiZjk5NTA0MWEwNTJjOQ "
+          },
+          {
+            "id": 44,
+            "product": "파슬리 씨드 안티 옥시던트 아이 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Eye-Cream-10mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTE0Njl8aW1hZ2UvcG5nfGltYWdlcy9oN2UvaDM3Lzg3OTc0NDU4MTYzNTAucG5nfDY2OWY1MTc2ZGE3MDk5YWMxZGU5NjgwYTEzYzJhYzFmZDgzNTk2NWJlNmQ0YzRjYzdlOTc4OTNiNWUxOTFlOTM "
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "category_id": 1,
+        "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
+        "name": "아이 리무버",
+        "description": "눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가 포함된 부드러운 오일 제형의 아이 메이크업 리무브",
+        "skin_types": [
+          {
+            "name": "모든 피부"
+          },
+          {
+            "name": "메이크업을 한 피부"
+          }
+        ],
+        "usability": "진정된, 생기있는",
+        "main_ingredient": "그레이프 씨드, 토코페롤, 마트리카리아꽃오일",
+        "size": [
+          {
+            "id": 1,
+            "size": "60 mL",
+            "price": "₩ 30,000"
+          }
+        ],
+        "ingredient": "포도씨오일, 토코페롤, 마트리카리아꽃오일\n",
+        "sub_image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-Hybris-Secondary-Texture-50-50-Mobile-640x640px.jpg?context=bWFzdGVyfGltYWdlc3wxMjAwM3xpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGZhLzkzOTI2MjMzNTM4ODYuanBnfDgxZGVhNmNiZTM2YWQxMTY0OTdlMWFjMThiZWIxZjkyNGJiY2ZiYjczMTRiN2FmMTliMjIwNmRiNDk1OTRhOTA",
+        "method": "젖은 화장솜에 덜어 아이 메이크업 제품이 용해될 때까지 기다렸다 닦아냅니다",
+        "amount": "5-7방울",
+        "texture": "가벼운, 오일 타입",
+        "scent": "허브향, 플로랄, 너티",
+        "recommendation_desctiption": "퓨리파잉 페이셜 크림 클렌저에 섞어 사용하여 데일리 클렌저로 사용할 수 있습니다. 세안 후 피부의 영양 공급 및 보충을 위해, 파슬리 씨드 안티 옥시던트 하이드레이터를 사용해보세요. 밤에는 파슬리 씨드 안티 옥시던트 아이 세럼을 사용하여 민감한 눈 주위 피부에 수분과 활력을 선사하세요.",
+        "recommendation_items": [
+          {
+            "id": 3,
+            "product": "퓨리파잉 페이셜 크림 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Purifying-Facial-Cream-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxNjM2MDR8aW1hZ2UvcG5nfGltYWdlcy9oZmQvaGFlLzg3OTc0NDY1MDQ0NzgucG5nfDM0ZmFlMGFiYWI1MjBjZGFiNDZmNmUxMzRiMWM3ZjNmYTgxNTk1YjY0MThkZjliNDYyZTdlNDcyMTFhODM4Mjc "
+          },
+          {
+            "id": 54,
+            "product": "비 앤 티 밸런싱 토너",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-B-Tea-Balancing-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTk2MzZ8aW1hZ2UvcG5nfGltYWdlcy9oNjQvaDM2Lzg4MDc0MTc4Mzk2NDYucG5nfGU1ODAxYzNjMzI3MzY4ZTVlOGI0YjBmNmY2NzNkY2VlOWFkMzlmNGE0ZWJkYjFiMzgzNjlhMWVmNGYxODgyODA "
+          },
+          {
+            "id": 51,
+            "product": "카멜리아 너트 페이셜 하이드레이팅 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Camellia-Nut-Facial-Hydrating-Cream-60mL-small.png?context=bWFzdGVyfGltYWdlc3w5NDEzOXxpbWFnZS9wbmd8aW1hZ2VzL2g4Ni9oMjcvODc5Nzc3NDI1MDAxNC5wbmd8YjBmMWUwY2UxOGMwZWYyNzdiODk3ODVlMDBkYmZkZjhjM2Y0OWY0MmRkMDM0MGMxYmNiZjk5NTA0MWEwNTJjOQ "
+          },
+          {
+            "id": 44,
+            "product": "파슬리 씨드 안티 옥시던트 아이 크림",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Eye-Cream-10mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTE0Njl8aW1hZ2UvcG5nfGltYWdlcy9oN2UvaDM3Lzg3OTc0NDU4MTYzNTAucG5nfDY2OWY1MTc2ZGE3MDk5YWMxZGU5NjgwYTEzYzJhYzFmZDgzNTk2NWJlNmQ0YzRjYzdlOTc4OTNiNWUxOTFlOTM "
+          }
+        ]
+      }
+    ]
+  }
+}

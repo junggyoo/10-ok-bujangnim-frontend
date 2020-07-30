@@ -14,66 +14,6 @@
   font-family: "Suisse Regular";
   color: $fontDark;
 
-  .out {
-    transition-timing-function: ease;
-    visibility: hidden;
-  }
-  .come {
-    transform: translateX(0);
-    transition-timing-function: ease;
-    visibility: visible;
-    transition: width 1s;
-    background-color: red;
-    transition-property: background-color;
-  }
-
-  .ClickIngredientContainer {
-    position: fixed;
-    background-color: #f1f0e8;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    width: 50vw;
-    height: 100vh;
-    transform: translate(50%);
-
-    .productIngredientWrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 50%;
-      padding: 0 200px;
-
-      .content {
-        margin: 50px 0;
-
-        li {
-          color: $fontDark;
-          margin: 30px 0;
-
-          &:last-child {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-
-    .closeBtn {
-      position: absolute;
-      background-color: inherit;
-      border-style: none;
-      cursor: pointer;
-      width: 30px;
-      right: 30px;
-      top: 30px;
-
-      .closeBtnIcon {
-        width: 12px;
-        height: 12px;
-      }
-    }
-  }
   //<-- Top Details -->
   .details {
     display: flex;
@@ -167,7 +107,7 @@
             border-radius: 50%;
             background-color: inherit;
             border: 1px solid black;
-            transition-duration: 1s;
+            transition-duration: 350ms;
 
             .moreBtnIcon {
               font-weight: normal;
@@ -223,6 +163,26 @@
   .useExplanation {
     display: flex;
     height: 100vh;
+
+    .productVideoContainer {
+      width: calc(100% * 1 / 2);
+      top: 0;
+      left: 0;
+      animation: 1000ms 1ms slide-right--100 cubic-bezier(0.32, 0.24, 0.15, 1)
+        forwards;
+      transform: translate(-100%, 0);
+      background-color: $lightColor;
+      height: 100%;
+
+      @keyframes slide-right--100 {
+        0% {
+          transform: translate(-200%, 0);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    }
 
     .imgBox {
       position: relative;

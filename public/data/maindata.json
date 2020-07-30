@@ -1,0 +1,35 @@
+{
+  "result": "SUCCESS",
+  "data": [
+    {
+      "product__name": "어메이징 페이스 클렌저",
+      "product__description": "피부의 균형을 잡아주는 데일리 클렌저",
+      "image_url": "https://www.aesop.com/medias/Large-PNG-Aesop-Skin-Amazing-Face-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTgxOTJ8aW1hZ2UvcG5nfGltYWdlcy9oY2QvaDBiLzg4MTUyNDA5MDQ3MzQucG5nfDFhYWYyYTBjYTBlOTlkZWI1ODUyMGM2NWFhNTI5YzRlMzk0N2M5YzVjNjJmYzE4YWQ3NmE0YzBkZGVmZDZkN2U "
+    },
+    {
+      "product__name": "라인드 컨센트레이트 바디 밤",
+      "product__description": "빠른 흡수, 가벼운 수분 공급",
+      "image_url": "https://www.aesop.com/medias/Aesop-Body-Rind-Concentrate-Body-Balm-120mL-large.png?context=bWFzdGVyfGltYWdlc3w1ODgyNjB8aW1hZ2UvcG5nfGltYWdlcy9oYzUvaDIxLzg3OTc0Mzk1OTA0MzAucG5nfDFiNGYxMGEzY2RlZGI4ZGJmZDQ5NDA0MmQ4NTZkZDlhYzI1OWNkYmNjNzhiYTZiMTM4MmY4MTNhNmNiYjVlZjY"
+    },
+    {
+      "product__name": "파슬리 씨드 클렌징 마스크",
+      "product__description": "파슬리 씨드와 로즈힙 열매오일 추출물, 피부의 수분감을 유지",
+      "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Cleansing-Masque-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjQ1NTd8aW1hZ2UvcG5nfGltYWdlcy9oMjAvaDliLzg3OTc0NDYxNDQwMzAucG5nfGFlZjBhYWEyNjUxOTZkYTIzMWNhZTU4Y2I5OWRkMmYwYWRkNzEyYjgyZTQ4ODI5ZmVmMDg3NGNmMDZhZDY3ZDY "
+    },
+    {
+      "product__name": "모로칸 네롤리 쉐이빙 세럼",
+      "product__description": "보태닉 추출물, 피부 진정을 돕는 순한 쉐이빙 세럼",
+      "image_url": "https://www.aesop.com/medias/Aesop-Skin-Moroccan-Neroli-Shaving-Serum-60mL-Small-373x364px.png?context=bWFzdGVyfGltYWdlc3w1OTY3NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oOTEvOTA2Mzc3NDkxMjU0Mi5wbmd8ZjJhYTI2YzRjNGI4YWVjYzA0Y2IzOTQzODQwNTRkN2M4NThjNzFmNGQ0Njc3NGExZjMwNmFkMzg1M2ZmNmZkMg "
+    },
+    {
+      "product__name": "아이 리무버",
+      "product__description": "마트리카리아가 포함된 부드러운 오일 제형",
+      "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU "
+    },
+    {
+      "product__name": "제라늄 리프 듀엣",
+      "product__description": "바디 관리를 위한 클렌징과 밤으로 구성된 세트",
+      "image_url": "https://www.aesop.com/medias/Aesop-Geranium-Leaf-Duet-with-Product-Large-1584x962px.png?context=bWFzdGVyfGltYWdlc3w0MTIxMzV8aW1hZ2UvcG5nfGltYWdlcy9oZTEvaGYyLzkxMTA3OTg5NTg2MjIucG5nfDMxNDhlMjJkMWY4NDZiNDU5NWJjMDcxZmM4MzljMmYxNjZhMDVmMTEzMTI1NDZkMTk3ODcxNzA5YjdmNDhlMDU"
+    }
+  ]
+}

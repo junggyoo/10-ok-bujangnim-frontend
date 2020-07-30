@@ -32,7 +32,7 @@ class Signup extends Component {
         })
 
         if (e.target.value.length > 0) {
-            if (e.target.value === this.state.pw) {
+            if (e.target.value === signup.pw) {
                 this.setState({ pwError: false });
             } else {
                 this.setState({ pwError: true });
@@ -52,14 +52,14 @@ class Signup extends Component {
         })
     }
 
-    handleSingUP = (e) => {
+    handleSignUP = (e) => {
         fetch("http://10.58.5.36/user/sign-up", {
                 method: 'POST',
                 body: JSON.stringify({
-                    email: this.state.email,
-                    password: this.state.pw,
-                    first_name: this.state.firstname,
-                    last_name: this.state.lastname
+                    email: signup.email,
+                    password: signup.pw,
+                    first_name: signup.firstname,
+                    last_name: signup.lastname
                 })
             })
             .then(res => res.json())
@@ -81,6 +81,7 @@ class Signup extends Component {
 
 
     render() {
+        const {signup} = this.state;
         return(
             <div className="Signup">
                 <form className="loginForm">
@@ -135,7 +136,7 @@ class Signup extends Component {
                             </div>
                         </div>
                     </div>
-                    <button onClick={this.handleSingUP} className={this.state.email.length > 5 && this.state.pw === this.state.pwconfirm && this.state.firstname.length >= 1 && this.state.lastname.length >= 1 ? "btnSingUPActive":"btnSignUPunActive"} type="submit">
+                    <button onClick={this.handleSignUP} className={signup.email.length > 5 && signup.pw === signup.pwconfirm && signup.firstname.length >= 1 && signup.lastname.length >= 1 ? "btnSignUPActive":"btnSignUPunActive"} type="submit">
                         <div className="btnContent">
                             <span className="btnLabel">등록</span>
                         </div>

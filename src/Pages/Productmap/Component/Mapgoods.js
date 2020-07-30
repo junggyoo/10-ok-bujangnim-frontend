@@ -8,10 +8,10 @@ class Mapgoods extends Component {
     }
 
     render() {
-    const goods =this.props.goods;
+    const sales =this.props.sales;
         return (
             <>
-                {goods.map(product => {
+                {sales.map(product => {
                     return (
                         <Mapgood product={product} />
                         );

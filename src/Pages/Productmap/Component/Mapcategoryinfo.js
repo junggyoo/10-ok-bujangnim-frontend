@@ -7,8 +7,7 @@ class Mapcategoryinfo extends Component {
     }
 
     render() {
-   
-      const category= this.props.categoryInfo;
+        const category= this.props.categoryInfo;
         return(
             <>
             <div className="Mapcategoryinfo">

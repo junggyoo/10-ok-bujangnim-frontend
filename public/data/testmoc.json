@@ -1,0 +1,370 @@
+{
+  "result": "SUCCESS",
+  "data": {
+    "catalog": [
+      {
+        "id": 1,
+        "name": "스킨",
+        "is_activated": "Y",
+        "created_at": "2020-07-23T20:02:33Z",
+        "updated_at": "2020-07-23T20:02:33Z"
+      }
+    ],
+    "category": [
+      {
+        "id": 1,
+        "catalog_id": 1,
+        "name": "클렌저",
+        "description_title": "처음의 시작",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "각질, 불필요한 유분 그리고 기타 잔여물을 말끔히 씻어내어 피부를 깨끗하게 하는 것은 인텔리전트 스킨케어의 기초입니다.",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 2,
+        "catalog_id": 1,
+        "name": "각질 제거",
+        "description_title": "마찰로 만드는 아름다움",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "효과적인 각질 관리는 지친 피부로부터 자유롭게 하여, 부드럽고 생기 있으며 매끄러운 피부로 가꿔줍니다.",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 3,
+        "catalog_id": 1,
+        "name": "트리트먼트 & 마스크",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 4,
+        "catalog_id": 1,
+        "name": "토너",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 5,
+        "catalog_id": 1,
+        "name": "하이드레이터",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 6,
+        "catalog_id": 1,
+        "name": "립 & 아이",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 7,
+        "catalog_id": 1,
+        "name": "쉐이빙",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 8,
+        "catalog_id": 1,
+        "name": "선 케어 / SPF",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 9,
+        "catalog_id": 1,
+        "name": "키트",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 10,
+        "catalog_id": 1,
+        "name": "스킨케어 세트 추천",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      },
+      {
+        "id": 11,
+        "catalog_id": 1,
+        "name": "스킨 케어 기프트",
+        "description_title": "Y",
+        "description": "2020-07-23 20:03:02.000000",
+        "description_content": "2020-07-23 20:03:02.000000",
+        "is_activated": "1",
+        "created_at": null,
+        "updated_at": null
+      }
+    ],
+    "items": [
+      {
+        "category_info": {
+          "id": 1,
+          "name": "클렌저",
+          "description_content": "각질, 불필요한 유분 그리고 기타 잔여물을 말끔히 씻어내어 피부를 깨끗하게 하는 것은 인텔리전트 스킨케어의 기초입니다.",
+          "description_title": "처음의 시작"
+        },
+        "next_category": {
+          "id": 2,
+          "catalog_id": 1,
+          "name": "각질 제거",
+          "description_title": "마찰로 만드는 아름다움",
+          "description": "2020-07-23 20:03:02.000000",
+          "description_content": "효과적인 각질 관리는 지친 피부로부터 자유롭게 하여, 부드럽고 생기 있으며 매끄러운 피부로 가꿔줍니다.",
+          "is_activated": "1",
+          "created_at": null,
+          "updated_at": null
+        },
+        "products": [
+          {
+            "id": 1,
+            "category_id": 1,
+            "name": "아이 리무버",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
+            "usability": "진정된, 생기있는",
+            "size": [
+              {
+                "id": 1,
+                "size": "60 mL",
+                "price": "₩ 30,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "모든 피부"
+              },
+              {
+                "name": "메이크업을 한 피부"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "category_id": 1,
+            "name": "파슬리 씨드 페이셜 클렌징 오일",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Facial-Cleansing-Oil-200mL-small.png?context=bWFzdGVyfGltYWdlc3wxNDkxMzF8aW1hZ2UvcG5nfGltYWdlcy9oMDUvaDIyLzg3OTc0NDYyNDIzMzQucG5nfDdiMDQ3NDcxNDczNDU3NzkxYzYwMzExM2UwZTRhMTZlNGYzNDNkM2NlZDljZDNhMTBjZjYzYWMyMGUwZGM2OWQ ",
+            "usability": "부드러운, 진정된",
+            "size": [
+              {
+                "id": 2,
+                "size": "200 mL",
+                "price": "₩ 63,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "중성"
+              },
+              {
+                "name": "복합성"
+              },
+              {
+                "name": "건성"
+              },
+              {
+                "name": "민감성 피부"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "category_id": 1,
+            "name": "퓨리파잉 페이셜 크림 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Purifying-Facial-Cream-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxNjM2MDR8aW1hZ2UvcG5nfGltYWdlcy9oZmQvaGFlLzg3OTc0NDY1MDQ0NzgucG5nfDM0ZmFlMGFiYWI1MjBjZGFiNDZmNmUxMzRiMWM3ZjNmYTgxNTk1YjY0MThkZjliNDYyZTdlNDcyMTFhODM4Mjc ",
+            "usability": "탄력, 유연, 부드러운",
+            "size": [
+              {
+                "id": 3,
+                "size": "100 mL",
+                "price": "₩ 45,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "중성"
+              },
+              {
+                "name": "건성 피부"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "category_id": 1,
+            "name": "페뷸러스 페이스 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Fabulous-Face-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTc3MDN8aW1hZ2UvcG5nfGltYWdlcy9oNzYvaDNmLzg4MTUwMjI2Njk4NTQucG5nfDg4NTljZjVjYjkyNTQyOTMzNjlhYTU1YmU3YThkNmE1ODkzYWYxZmNlMzExZDljNjVmNTU4ZGE1YTAxZTc2M2M ",
+            "usability": "상쾌한, 진정된, 부드러운",
+            "size": [
+              {
+                "id": 4,
+                "size": "100 mL",
+                "price": "₩ 33,000"
+              },
+              {
+                "id": 5,
+                "size": "200 mL",
+                "price": "₩ 53,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "중성"
+              },
+              {
+                "name": "건성 피부"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "category_id": 1,
+            "name": "파슬리 씨드 페이셜 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-SkinParsley-Seed-Facial-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTMyMzN8aW1hZ2UvcG5nfGltYWdlcy9oMTIvaGY3Lzg4MTUwMjM3MTg0MzAucG5nfDRhNzg4MjA3MjcyMGRhMTVhOWZmZjI3NTU2OTM2MjhjZjQ1MjZiZTQ3OTdkMmRjMDlhZWZmOTY0NTMwNWVhYzM ",
+            "usability": "매끄러운, 부드러운",
+            "size": [
+              {
+                "id": 6,
+                "size": "100 mL",
+                "price": "₩ 45,000"
+              },
+              {
+                "id": 7,
+                "size": "200 mL",
+                "price": "₩ 69,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "중성"
+              },
+              {
+                "name": "복합성"
+              },
+              {
+                "name": "문제성 피부"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "category_id": 1,
+            "name": "어메이징 페이스 클렌저",
+            "image_url": "https://www.aesop.com/medias/Large-PNG-Aesop-Skin-Amazing-Face-Cleanser-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMTgxOTJ8aW1hZ2UvcG5nfGltYWdlcy9oY2QvaDBiLzg4MTUyNDA5MDQ3MzQucG5nfDFhYWYyYTBjYTBlOTlkZWI1ODUyMGM2NWFhNTI5YzRlMzk0N2M5YzVjNjJmYzE4YWQ3NmE0YzBkZGVmZDZkN2U ",
+            "usability": "산뜻한, 매끄러운",
+            "size": [
+              {
+                "id": 8,
+                "size": "100 mL",
+                "price": "₩ 33,000"
+              },
+              {
+                "id": 9,
+                "size": "200 mL",
+                "price": "₩ 53,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "지성"
+              },
+              {
+                "name": "복합성 피부"
+              },
+              {
+                "name": "덥고 습한 날씨의 피부"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "category_id": 1,
+            "name": "인 투 마인즈 페이셜 클렌저",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-In-Two-Minds-Facial-Cleanser-100mL-Small-455x524px.png?context=bWFzdGVyfGltYWdlc3wzNTI4MXxpbWFnZS9wbmd8aW1hZ2VzL2hkZi9oMDMvOTE0NzM0MjcxNjk1OC5wbmd8ZjVlMjMzOGY2NTdmZGU2NzA3MmExMTk4MjhmZTQ3ZDYwMDg2ODlkZjY1NWY3ZWUyNWM5M2RhMGI2MzIwNmMwNQ ",
+            "usability": "산뜻한, 매끄러운",
+            "size": [
+              {
+                "id": 10,
+                "size": "100 mL",
+                "price": "₩ 33,000"
+              },
+              {
+                "id": 11,
+                "size": "200 mL",
+                "price": "₩ 53,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "복합성 피부"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "category_id": 1,
+            "name": "젠틀 페이셜 클렌징 밀크 ",
+            "image_url": "https://www.aesop.com/medias/Aesop-Skin-Gentle-Facial-Cleansing-Milk-100mL-Small-426x434px.png?context=bWFzdGVyfGltYWdlc3wxMDQ3NjJ8aW1hZ2UvcG5nfGltYWdlcy9oNjIvaDU0LzkwMzA3MjM0NjkzNDIucG5nfDU0ZjcwNDNhNTgxODAyNDc3OTNiNmNhMWU4MDM1NThiMWY5YWYwOGE4N2MxNDMwNWVlMmI1MzRkYjM3OThjZTE ",
+            "usability": "산뜻한, 부드러운, 상쾌한",
+            "size": [
+              {
+                "id": 12,
+                "size": "100 mL",
+                "price": "₩ 40,000"
+              },
+              {
+                "id": 13,
+                "size": "200ml",
+                "price": "₩ 60,000"
+              }
+            ],
+            "skin_types": [
+              {
+                "name": "모든 피부 타입"
+              },
+              {
+                "name": "건조하고 민감한 피부"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
