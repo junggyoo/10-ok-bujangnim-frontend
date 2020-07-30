@@ -159,21 +159,14 @@
             "name": "아이 리무버",
             "image_url": "https://www.aesop.com/medias/Aesop-Skin-Remove-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjM3Mjh8aW1hZ2UvcG5nfGltYWdlcy9oOGIvaGExLzg4MDUwNzMxNTgxNzQucG5nfDFhOTdhMzRiOTE3NTY3MGIwZmQ3NjcxNzRjMWMzMTJjYWZlMTdiZWRjZDJlYjdiNzEyOWVhM2FiMTMyYzk5NWU ",
             "usability": "진정된, 생기있는",
-            "size": [
-              {
-                "id": 1,
-                "size": "60 mL",
-                "price": "₩ 30,000"
-              }
-            ],
-            "skin_types": [
-              {
-                "name": "모든 피부"
-              },
-              {
-                "name": "메이크업을 한 피부"
-              }
-            ]
+            "size": {
+              "id": 1,
+              "size": "60 mL",
+              "price": "₩ 30,000"
+            },
+            "skin_types": {
+              "name": "모든 피부, 메이크업을 한 피부"
+            }
           },
           {
             "id": 2,

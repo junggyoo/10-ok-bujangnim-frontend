@@ -1,25 +1,27 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./Footer.scss";
 
 class Footer extends React.Component {
   state = {
-    focused: false,
+    emailFocused: false,
   };
 
   focusEmailInput = () => {
-    this.setState({ focused: !this.state.focused });
+    this.setState({ emailFocused: !this.state.emailFocused });
   };
 
   render() {
-    const { focused } = this.state;
+    const { emailFocused } = this.state;
     return (
-      <Fragment>
+      <>
         <footer className="Footer">
           <div className="footerContent">
             <div className="newsLetter">
-              <p className="subscribe">구독하기</p>
+              <span className="subscribe">구독하기</span>
               <div className="inputBox">
-                <span className={focused ? "textEmail:focus" : "textEmail"}>
+                <span
+                  className={emailFocused ? "textEmail:focus" : "textEmail"}
+                >
                   이메일주소
                 </span>
                 <div
@@ -37,7 +39,7 @@ class Footer extends React.Component {
             </div>
             <div className="footerRight">
               <ul className="footerInquiry">
-                <li className="listTitle">문의하기</li>
+                <li>문의하기</li>
                 <li>문의하기</li>
                 <li>FAQS</li>
                 <li>배송 및 반품</li>
@@ -46,7 +48,7 @@ class Footer extends React.Component {
                 <li>개인정보 정책</li>
               </ul>
               <ul className="footerInfo">
-                <li className="listTitle">브랜드소개</li>
+                <li>브랜드소개</li>
                 <li>브랜드 스토리</li>
                 <li>채용</li>
                 <li>마케팅 문의</li>
@@ -55,7 +57,7 @@ class Footer extends React.Component {
                 <li>개인 정보 보호 정책</li>
               </ul>
               <ul className="footerSocial">
-                <li className="listTitle">소셜</li>
+                <li>소셜</li>
                 <li>Instagram</li>
                 <li>Twitter</li>
                 <li>LinkedIn</li>
@@ -72,10 +74,10 @@ class Footer extends React.Component {
           </div>
         </footer>
         <div className="aesopKorea">
-          <p>© 이솝</p>
-          <p>대한민국</p>
+          <span>© 이솝</span>
+          <span>대한민국</span>
         </div>
-      </Fragment>
+      </>
     );
   }
 }

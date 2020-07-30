@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../../Components/Nav";
+import Nav from "../../Components/Nav/Nav";
 import Aesoplogo from "../../Components/Aesoplogo";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 import Recommendproduct from "./Components/Recommendproduct";
 import Slider from "react-slick";
 import { productDetailTopImg } from "../../config";

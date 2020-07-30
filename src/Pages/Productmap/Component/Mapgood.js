@@ -31,7 +31,8 @@ class Mapgood extends Component {
 
 
     render() {
-        console.log(this.props)
+        const product = this.props.product;
+    console.log(this.props.product);
         return(
             <div onMouseOver={this.hoverOverChange} onMouseOut={this.hoverOutChange} className={this.state.display ?
                 `hoverState subcategoryProducts `: `nonehoverState subcategoryProducts`}>
@@ -39,17 +40,17 @@ class Mapgood extends Component {
                     <div className="pictureImgLinkControl">
                         <Link className="pictureImgLinkTag" to="">
                             <div className="productPicture">
-                                <img className="pictureImg" src={this.props.product.image} alt=""></img>
+                                <img className="pictureImg" src={product.image_url} alt=""></img>
                             </div>
                         </Link>
                     </div>
                     <div className="productSizePrice">
-                        <Link to="" >
-                            <h5 className="productSizePriceName">{this.props.product.name}</h5>
+                        <Link className="textdeco" to="" >
+                            <h5 className="productSizePriceName">{product.name}</h5>
                             <div className="productSizePriceInfo">
-                                <span>{this.props.product.size}</span>
+                                <span>{product.size.size}</span>
                                 <span className="spanSlash">/</span>
-                                <span>{this.props.product.price}</span>
+                                <span>{product.size.price}</span>
                             </div>
                         </Link>
                     </div>
@@ -58,12 +59,12 @@ class Mapgood extends Component {
                             <div className="productDetails">
                                 <ul className="productList">
                                     <li className="productDetailsListItem">
-                                        <div className="productDetailsTitle">{this.props.product.detail}</div>
-                                        <div className="productDetailsContent">{this.props.product.type}</div>
+                                        <div className="productDetailsTitle">피부 타입</div>
+                                        <div className="productDetailsContent">{product.skin_types.name}</div>
                                     </li>
                                     <li className="productDetailsListItem">
-                                        <div className="productDetailsTitle">{this.props.product.feeltitle}</div>
-                                        <div className="productDetailsContent">{this.props.product.feel}</div>
+                                        <div className="productDetailsTitle">사용감</div>
+                                        <div className="productDetailsContent">{product.usability}</div>
                                     </li>
                                 </ul>
                             </div>
@@ -71,7 +72,7 @@ class Mapgood extends Component {
                                 `hoverState productWrapper` : `nonehoverState productWrapper`} >
                                 <button className="productCartBtn" type="button">
                                     <div className="btnContent">
-                                        <span onClick={this.hadleChangeBtn} className={this.state.btnChange ? "btnLabel" : "noneBtnLabel"}>카트에 추가 — {this.props.product.price}</span>
+                                        <span onClick={this.hadleChangeBtn} className={this.state.btnChange ? "btnLabel" : "noneBtnLabel"}>카트에 추가 — {product.size.price}</span>
                                         <span className={this.state.btnChange ? "btnLabelAction" : "nonebtnLabelAction" }>카트에 추가됨</span>
                                         <span className="loadingIndicatorLight"></span>
                                     </div>

@@ -2,7 +2,7 @@
 $font-family: "Suisse Regular", sans-serif;
 
 .subcategoryProducts {
-  width: 33%;
+  width: calc(100% * 1 / 3);
   height: 790px;
 
   .subcatProductWrapper:hover {
@@ -54,24 +54,28 @@ $font-family: "Suisse Regular", sans-serif;
       height: 90px;
       text-decoration: none;
 
-      .productSizePriceName {
-        color: #252525;
-        margin-bottom: 10px;
-        font-size: 14px;
-        text-align: center;
-        font-family: "Suisse Medium", sans-serif;
-      }
+      .textdeco {
+        text-decoration: none;
 
-      .productSizePriceInfo {
-        color: #666;
-        display: flex;
-        font-size: 14px;
-        font-family: $font-family;
-        justify-content: center;
+        .productSizePriceName {
+          color: #252525;
+          margin-bottom: 10px;
+          font-size: 14px;
+          text-align: center;
+          font-family: "Suisse Medium", sans-serif;
+        }
 
-        .spanSlash {
-          margin: 0 5px;
-          color: #33333333;
+        .productSizePriceInfo {
+          color: #666;
+          display: flex;
+          font-size: 14px;
+          font-family: $font-family;
+          justify-content: center;
+
+          .spanSlash {
+            margin: 0 5px;
+            color: #33333333;
+          }
         }
       }
     }

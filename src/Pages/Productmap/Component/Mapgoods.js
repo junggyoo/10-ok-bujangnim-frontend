@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Mapgood from "./Mapgood";
-// import "./Mapgoods.scss";
+import "./Mapgoods.scss";
 
 class Mapgoods extends Component {
     constructor() {
@@ -8,9 +8,10 @@ class Mapgoods extends Component {
     }
 
     render() {
+    const goods =this.props.goods;
         return (
             <>
-                {this.props.products.map(product => {
+                {goods.map(product => {
                     return (
                         <Mapgood product={product} />
                         );

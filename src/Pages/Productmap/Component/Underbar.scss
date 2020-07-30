@@ -45,10 +45,11 @@ $font-family: "Suisse Regular", sans-serif;
       height: 160px;
 
       .nextpageInfoTitle {
-        color: #333333;
+        color: $fontDark;
         margin-bottom: 20px;
         font-size: 14px;
         margin-bottom: 20px;
+        font-weight: 400;
         font-family: "Suisse Medium", sans-serif;
         line-height: inherit;
       }
@@ -58,10 +59,45 @@ $font-family: "Suisse Regular", sans-serif;
         font-size: 30px;
         margin-bottom: 20px;
         line-height: 1.33;
+        font-weight: 400;
         font-family: "Zapf Humanist", serif;
       }
 
       .nextpageBtnWrapper {
+        .nextpageBtn:hover {
+          background-color: $fontDark;
+          border: 1px solid rgba(51, 51, 51, 0.2);
+          height: 60px;
+          min-width: 210px;
+          padding: 21px 23px;
+          position: relative;
+          background-color: $fontDark;
+
+          .btnContent {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+            overflow: hidden;
+
+            .btnLabel {
+              font-family: "Suisse Medium", sans-serif;
+              color: #fffef2;
+              font-size: 14px;
+              line-height: 1.1;
+              flex-shrink: 0;
+            }
+
+            .btnIconBector {
+              fill: #fffef2;
+              height: 10px;
+              margin-left: 23px;
+              width: 15px;
+            }
+          }
+        }
+
         .nextpageBtn {
           border: 1px solid rgba(51, 51, 51, 0.2);
           height: 60px;
@@ -79,9 +115,9 @@ $font-family: "Suisse Regular", sans-serif;
             overflow: hidden;
 
             .btnLabel {
-              font-family: $font-family;
+              font-family: "Suisse Medium", sans-serif;
               color: $fontDark;
-              font-size: 1.4rem;
+              font-size: 14px;
               line-height: 1.1;
               flex-shrink: 0;
             }
