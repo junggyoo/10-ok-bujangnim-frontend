@@ -26,3 +26,5 @@ export const productListMockUpData =
   "http://localhost:3000/data/productlist.json";
 
 export const recommendMockUpData = "http://localhost:3000/data/recommend.json";
+
+export const PLData = "http://localhost:3000/data/PL.json";
