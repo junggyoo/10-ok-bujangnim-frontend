@@ -1,8 +1,8 @@
 import React from "react";
 import { aesopLogoPath } from "../config";
 import * as productList_API from "../config";
-import "./Productfilternav.scss";
 import { withRouter } from "react-router-dom";
+import "./Productfilternav.scss";
 
 class Productfilternav extends React.Component {
   state = {

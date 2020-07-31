@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link, withRouter } from 'react-router-dom';
-// import { withRouter } from "react-router-dom";
 import "./Mapgood.scss";
 
 class Mapgood extends Component {
@@ -41,6 +40,7 @@ class Mapgood extends Component {
 
     render() {
         const product = this.props.product;
+        console.log(this.props)
         return(
             <div onMouseOver={this.hoverOverChange} onMouseOut={this.hoverOutChange} className={this.state.display ?
                 `hoverState subcategoryProducts `: `nonehoverState subcategoryProducts`}>
@@ -64,7 +64,7 @@ class Mapgood extends Component {
                         </Link>
                     </div>
                     <div className="productDetailLink">
-                        {/* <Link  to=""> */}
+                        <Link  to="">
                             <div className="productDetails">
                                 <ul className="productList">
                                     <li className="productDetailsListItem">
@@ -95,11 +95,10 @@ class Mapgood extends Component {
                                             카트에 추가 — {product.size[0].price}
                                         </div>
                                         <span className={this.state.btnChange ? "btnLabelAction" : "nonebtnLabelAction" }>카트에 추가됨</span>
-                                        {/* <span className="loadingIndicatorLight"></span> */}
                                     </div>
                                 </button>
                             </div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div>

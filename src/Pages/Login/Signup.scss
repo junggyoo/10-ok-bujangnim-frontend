@@ -2,18 +2,13 @@
 $font-family: "Suisse Regular", sans-serif;
 
 .Signup {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .loginForm {
-    // @media (min-width: 640px) {
-    //     margin: 0 auto;
-    //     max-width: 550px;
-    //     padding: 50px;
-    // }
     background-color: $lightColor;
     padding: 50px;
     max-width: 550px;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import "./Signup.scss";
 
 class Signup extends Component {
@@ -178,7 +179,7 @@ class Signup extends Component {
               this.state.pw === this.state.pwconfirm &&
               this.state.firstname.length >= 1 &&
               this.state.lastname.length >= 1
-                ? "btnSingUPActive"
+                ? "btnSignUPActive"
                 : "btnSignUPunActive"
             }
             type="submit"
@@ -201,4 +202,4 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+export default withRouter(Signup);
