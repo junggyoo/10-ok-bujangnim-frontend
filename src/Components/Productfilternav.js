@@ -1,7 +1,8 @@
 import React from "react";
 import { aesopLogoPath } from "../config";
-import { withRouter } from "react-router-dom";
+import * as productList_API from "../config";
 import "./Productfilternav.scss";
+import { withRouter } from "react-router-dom";
 
 class Productfilternav extends React.Component {
   state = {
@@ -9,7 +10,7 @@ class Productfilternav extends React.Component {
   };
 
   clickHandler = (id) => {
-    this.props.history.push(`/maplist/${id}`)
+    this.props.history.push(`${id}`)
   }
 
   componentDidMount() {

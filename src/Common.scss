@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Suisse Medium";
+  font-family: "Suisse Medium", serif;
   src: url("/public/Fonts/SuisseIntl-Medium-WebS.woff2") format("woff2");
 }
 
@@ -27,3 +27,7 @@ $grayColor: #ebeade;
 // hover
 $lightGray: #f0efe1;
 $darkGray: #e5e4d8;
+// cart
+$cartFont: #aaa9a2;
+$cartBlack: #252525;
+$borderGray: #fffef21a;

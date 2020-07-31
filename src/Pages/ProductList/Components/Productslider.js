@@ -9,7 +9,7 @@ import "./Productslider.scss";
 
 class Productslider extends React.Component {
   clickHandler = (id) => {
-    this.props.history.push(`/skin/details/${id}`);
+    this.props.history.push(`/skin/${id}`);
   };
   render() {
     const { products } = this.props;

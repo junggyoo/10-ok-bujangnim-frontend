@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../../Components/Nav/Nav";
 import Productfilternav from "../../Components/Productfilternav";
 import Productslider from "./Components/Productslider";
+import * as productList_API from "../../config";
 import "./ProductList.scss";
 
 class ProductList extends React.Component {
@@ -12,7 +13,7 @@ class ProductList extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://10.58.6.25:8080/board/1")
+    fetch(productList_API)
       .then((res) => res.json())
       .then((res) => this.setState({ products: res.data }));
   }

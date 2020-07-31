@@ -82,7 +82,7 @@ class CitrusFeed extends React.Component {
               지금 보기
               <svg className="linkIcon" role="img" viewBox="0 0 50 50">
                 <g>
-                  <path d={aesopLogoPath.slideArrow}></path>
+                  <path d={aesopLogoPath.arrow}></path>
                 </g>
               </svg>
             </div>

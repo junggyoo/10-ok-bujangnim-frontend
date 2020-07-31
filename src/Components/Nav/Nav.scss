@@ -9,12 +9,14 @@
   color: $fontDark;
 }
 
-.Fixed {
+.NavFixed {
+  @extend .Nav;
+  top: 0;
   position: fixed;
   border: 1px solid #dad9d0;
   border-width: 0 0 1px 0;
   background-color: $lightColor;
-  z-index: 10;
+  z-index: 1;
 }
 
 .navList {
@@ -55,6 +57,7 @@
     display: flex;
   }
 }
+
 .navRight {
   margin-right: 25px;
   display: flex;
@@ -84,16 +87,16 @@
 .overlay {
   height: 100%;
   width: 0;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
-  z-index: 1;
   background-color: $lightColor;
-  overflow-x: hidden;
-  transition: 0.5s;
+  border-right: 1px solid $grayColor;
   font-family: "Suisse Regular", sans-serif;
   color: $fontDark;
-  border-right: 1px solid $grayColor;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
 
   .topList {
     display: flex;

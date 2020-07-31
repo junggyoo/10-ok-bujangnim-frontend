@@ -1,0 +1,58 @@
+@import "../../Common.scss";
+
+.Cart {
+  width: 100%;
+  height: 600px;
+  padding: 40px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: $cartBlack;
+  color: $cartFont;
+  font-family: "Suisse Regular", sans-serif;
+  animation: 1000ms 1ms slide-down--100 forwards;
+  transform: translate(0, -100%);
+
+  @keyframes slide-down--100 {
+    0% {
+      transform: translate(0, -100%);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  .cartInfo {
+    border-bottom: 1px solid $borderGray;
+    padding-bottom: 15px;
+    display: flex;
+    font-size: 15px;
+
+    .cartTitle {
+      width: calc(100% * 5 / 12);
+    }
+
+    .cartSize {
+      width: calc(100% * 3 / 12);
+    }
+
+    .cartQuantity {
+      width: calc(100% * 3 / 12);
+    }
+    .cartBtn {
+      width: calc(100% * 1 / 12);
+      display: flex;
+      justify-content: flex-end;
+
+      .btnContainer {
+        width: 15px;
+        height: 15px;
+        fill: $cartFont;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

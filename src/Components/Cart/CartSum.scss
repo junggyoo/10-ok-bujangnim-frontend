@@ -1,0 +1,33 @@
+@import "../../Common.scss";
+
+.cartSummary {
+  width: 100%;
+  padding-left: calc(100% * 2 / 3);
+  font-size: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  .totalPrice {
+    height: 100px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .sum {
+      font-size: 25px;
+      color: $lightColor;
+    }
+  }
+
+  .payBtn {
+    width: 100%;
+    height: 60px;
+    background-color: $lightColor;
+    color: $fontDark;
+    text-align: center;
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+}

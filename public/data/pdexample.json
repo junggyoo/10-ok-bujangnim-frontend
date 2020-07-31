@@ -1,0 +1,64 @@
+{
+  "result": "SUCCESS",
+  "data": [
+    {
+      "id": 2,
+      "category_id": 1,
+      "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Facial-Cleansing-Oil-200mL-small.png?context=bWFzdGVyfGltYWdlc3wxNDkxMzF8aW1hZ2UvcG5nfGltYWdlcy9oMDUvaDIyLzg3OTc0NDYyNDIzMzQucG5nfDdiMDQ3NDcxNDczNDU3NzkxYzYwMzExM2UwZTRhMTZlNGYzNDNkM2NlZDljZDNhMTBjZjYzYWMyMGUwZGM2OWQ ",
+      "name": "파슬리 씨드 페이셜 클렌징 오일",
+      "description": "진한 메이크업도 부드럽고 깨끗하게 닦아주는 오일 타입의 클렌저",
+      "skin_types": [
+        {
+          "name": "중성"
+        },
+        {
+          "name": "복합성"
+        },
+        {
+          "name": "건성"
+        },
+        {
+          "name": "민감성 피부"
+        }
+      ],
+      "usability": "부드러운, 진정된",
+      "main_ingredient": "라벤더, 화이트 클레이, 카모마일",
+      "size": [
+        {
+          "id": 2,
+          "size": "200 mL",
+          "price": "₩ 63,000"
+        }
+      ],
+      "ingredient": "아보카도오일, 스위트아몬드오일, 마카다미아씨오일, 쌀겨오일, C12-13파레스-3, 토코페롤, 돌콩오일, 비사보롤, 라벤더오일, 오르메니스 물티카울리스오일, 마트리카리아꽃오일, 당근추출물, 카룸 페트로셀리눔씨오일(0.0072%), 베타-카로틴",
+      "sub_image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Facial-Cleansing-Oil-Hybris-Secondary-Texture-50-50-Mobile-640x640px.jpg?context=bWFzdGVyfGltYWdlc3wxNDgwNnxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaGNhLzkzOTI2MjE3ODEwMjIuanBnfGIzZWUyYmU1YmJlZWZhZTQ5MmM1NDJlZGEwOGY1MDg4NTM3MGJkM2VmOGI2ZmYzMTEyMjI5NmUzNjFiZDFjZWM",
+      "method": "메이크업을 지울 때는 얼굴에 직접 발라 마사지 한 후 물로 씻어냅니다. 일반 세안 시에는 손바닥에 물과 함께 섞어 밀키한 에멀젼으로 만들어 얼굴과 목에 마사지 한 후 물로 씻어냅니다.",
+      "amount": "한 티스푼",
+      "texture": "수용성, 오일 타입",
+      "scent": "허브향, 플로랄, 너티",
+      "recommendation_desctiption": "도시 생활로 인한 스트레스에 노출된 피부를 건강하게 관리하게 위해 매일 세안 후에는 토너로 피부를 정돈하고 영양이 풍부한 하이드레이터로 마무리해줍니다. 건강한 피부를 유지할 수 있도록 매주 1-2회 클레이 기반의 딥 클렌징 마스크와 비타민이 풍부한 하이드레이팅 마스크로 스킨 케어 루틴을 보완하세요.",
+      "recommendation_items": [
+        {
+          "id": 11,
+          "product": "파슬리 씨드 클렌징 마스크",
+          "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Cleansing-Masque-60mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjQ1NTd8aW1hZ2UvcG5nfGltYWdlcy9oMjAvaDliLzg3OTc0NDYxNDQwMzAucG5nfGFlZjBhYWEyNjUxOTZkYTIzMWNhZTU4Y2I5OWRkMmYwYWRkNzEyYjgyZTQ4ODI5ZmVmMDg3NGNmMDZhZDY3ZDY "
+        },
+        {
+          "id": 20,
+          "product": "파슬리 씨드 안티 옥시던트 페이셜 토너",
+          "image_url": "https://www.aesop.com/medias/Large-PNG-Aesop-Skin-Parsley-Seed-Anti-Oxidant-Facial-Toner-100mL-small.png?context=bWFzdGVyfGltYWdlc3wxMjA2MDN8aW1hZ2UvcG5nfGltYWdlcy9oZmMvaDg4Lzg4MTU0NzY1MDY2NTQucG5nfGQwNWRlMTI3ZTA1OWVlOTA1Yzk4MzA4ZjYxOTM3NzRiNTVlNWVmNzE0ZjlmODI4NDE5NzU1NDhmM2VmMzY4Zjg "
+        },
+        {
+          "id": 35,
+          "product": "파슬리 씨드 안티 옥시던트 하이드레이터",
+          "image_url": "https://www.aesop.com/medias/Aesop-Skin-Parsley-Seed-Anti-Oxidant-Hydrator-60mL-small.png?context=bWFzdGVyfGltYWdlc3w5NDQ2NXxpbWFnZS9wbmd8aW1hZ2VzL2hhYy9oYTYvODc5NzQ0NjAxMjk1OC5wbmd8NjhmMGI1MGUwNGRmN2Q1ZDhmNGI3NDZmMDlmYjhkNzFhY2QyMjI0Y2VkN2QyNTliZDdiZjhlMzk1NmU4Yzk4ZA "
+        },
+        {
+          "id": 19,
+          "product": "서블라임 리플레니싱 나이트 마스크 ",
+          "image_url": "https://www.aesop.com/medias/Aesop-Skin-Sublime-Replenishing-Night-Masque-60mL-Small-491x261px.png?context=bWFzdGVyfGltYWdlc3wyODE1N3xpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oY2MvOTIzODkyMTkzNjkyNi5wbmd8NjY0NTMxNmJhNjM3ZjJmYTg1ODgxOTRkYjgwYmNmZTY2ZDBmYzE0NzU5NDJjMDA4NDFmM2JkNTIyY2RhMDY5Nw "
+        }
+      ]
+    }
+  ]
+}

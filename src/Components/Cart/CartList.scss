@@ -1,0 +1,96 @@
+@import "../../Common.scss";
+
+.cartAdded {
+  width: 100%;
+  height: 70px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $borderGray;
+  font-size: 16px;
+  font-weight: 100;
+
+  .productName {
+    width: calc(100% * 5 / 12);
+    color: $lightColor;
+  }
+  .productSize {
+    width: calc(100% * 3 / 12);
+  }
+
+  .productPrice {
+    color: $lightColor;
+  }
+
+  .productCount {
+    width: calc(100% * 3 / 12);
+    color: $lightColor;
+
+    .selectQuantity {
+      width: 70px;
+      height: 40px;
+      padding-top: 11px;
+      padding-left: 15px;
+      border: 1px solid $borderGray;
+      overflow-y: hidden;
+      cursor: pointer;
+
+      li {
+        padding-bottom: 10px;
+        display: flex;
+
+        svg {
+          width: 13px;
+          margin-left: 23px;
+          position: relative;
+          fill: $cartFont;
+        }
+      }
+    }
+
+    .selectClicked {
+      width: 70px;
+      height: 40px;
+      padding-top: 11px;
+      background-color: $lightColor;
+      color: $lightColor;
+      cursor: pointer;
+
+      .setValue {
+        display: none;
+
+        svg {
+          display: none;
+        }
+      }
+      .numList {
+        position: fixed;
+        z-index: 10;
+
+        li {
+          width: 70px;
+          padding-bottom: 10px;
+          padding-left: 15px;
+          background-color: $lightColor;
+          color: $fontDark;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}
+
+.productPrice {
+  width: calc(100% * 1 / 12);
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    display: flex;
+
+    svg {
+      width: 13px;
+      fill: $cartFont;
+    }
+  }
+}

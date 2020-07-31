@@ -9,7 +9,7 @@ class Product extends React.Component {
     return (
       <div className="Product" key={key} onClick={() => clickHandler(id)}>
         <div className="imgContainer">
-          <Link to="/skin/details">
+          <Link to="/skin/">
             <img src={image_url} alt="" />
           </Link>
         </div>

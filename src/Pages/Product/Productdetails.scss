@@ -1,6 +1,5 @@
 @import "./src/Common.scss";
 
-//<-- onClick IngredienPage -->
 .darkTop {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 2;
@@ -14,7 +13,6 @@
   font-family: "Suisse Regular";
   color: $fontDark;
 
-  //<-- Top Details -->
   .details {
     display: flex;
     justify-content: flex-end;
@@ -52,6 +50,26 @@
 
         li {
           font-size: 14px;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: $fontDark;
+          }
+
+          &:after {
+            display: block;
+            content: "";
+            border-bottom: 1px solid black;
+            transform: scaleX(0);
+            transition: transform 300ms ease-in-out;
+          }
+
+          &:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
         }
 
         .circlePoint {
@@ -159,34 +177,13 @@
     }
   }
 
-  //<-- Center Explanation -->
   .useExplanation {
     display: flex;
-    height: 100vh;
-
-    .productVideoContainer {
-      width: calc(100% * 1 / 2);
-      top: 0;
-      left: 0;
-      animation: 1000ms 1ms slide-right--100 cubic-bezier(0.32, 0.24, 0.15, 1)
-        forwards;
-      transform: translate(-100%, 0);
-      background-color: $lightColor;
-      height: 100%;
-
-      @keyframes slide-right--100 {
-        0% {
-          transform: translate(-200%, 0);
-        }
-        100% {
-          transform: translate(0, 0);
-        }
-      }
-    }
+    height: 940px;
 
     .imgBox {
       position: relative;
-      height: 980px;
+      height: 940px;
 
       .explanImg {
         width: 50vw;
@@ -271,8 +268,8 @@
       .explanList {
         .howToUse {
           h2 {
-            font-family: "Zapf";
-            font-weight: normal;
+            font-family: "Zapf", serif;
+            font-weight: lighter;
             color: $fontDark;
             margin: 25px 0;
             font-size: 30px;
@@ -301,7 +298,6 @@
     }
   }
 
-  //<-- Bottom Recommend -->
   .recommend {
     display: flex;
 
@@ -330,6 +326,7 @@
 
         p {
           color: $fontDark;
+          font-family: "Suisse Regular", sans-serif;
           line-height: 1.5;
         }
       }
@@ -351,7 +348,7 @@
         width: 100%;
 
         .slick-next {
-          left: 1220px;
+          left: 1350px;
         }
 
         .slick-prev:before {

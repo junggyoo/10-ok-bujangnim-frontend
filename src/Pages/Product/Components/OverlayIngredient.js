@@ -15,7 +15,9 @@ class OverlayIngredient extends React.Component {
 
   render() {
     const { isToggleOn } = this.state;
+    const { ingredient } = this.props;
     const { addViewHanddler } = this;
+
     return (
       <section
         className={
@@ -39,7 +41,7 @@ class OverlayIngredient extends React.Component {
           <div className="productIngredientWrapper">
             <ul className="content">
               <li className="title">성분</li>
-              <li className="info">포도씨오일, 토코페롤, 마트리카리아꽃오일</li>
+              <li className="info">{ingredient}</li>
               <li className="reference">
                 성분 목록은 변경될 수 있습니다. 구매하신 제품에 대한 정확한 성분
                 목록은, 사용 전 제품 라벨을 참조하시기 바랍니다.

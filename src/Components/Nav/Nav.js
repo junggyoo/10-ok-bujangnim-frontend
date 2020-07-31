@@ -1,8 +1,9 @@
 import React from "react";
 import SkinSideBar from "./SkinSideBar";
+import Cart from "../../Components/Cart/Cart";
+import Login from "../../Pages/Login/Login";
 import { Link } from "react-router-dom";
 import { aesopLogoPath } from "../../config";
-
 import "./Nav.scss";
 
 class Nav extends React.Component {
@@ -11,6 +12,9 @@ class Nav extends React.Component {
     this.state = {
       style: { width: 0 },
       shownSecond: false,
+      shownCart: false,
+      shownLogin: false,
+      email: "",
     };
   }
 
@@ -25,35 +29,61 @@ class Nav extends React.Component {
 
   openSecond = () => {
     this.setState({ shownSecond: true });
-    console.log(this.state.shownSecond);
+  };
+
+  showCart = () => {
+    const { shownCart } = this.state;
+    this.setState({ shownCart: !shownCart });
+  };
+
+  componentDidUpdate(prevProps, prevState) {
+    const { shownCart } = this.state;
+    if (prevState.shownCart !== shownCart) {
+      this.setState({ shownCart: true });
+    }
+  }
+
+  //로그인시 nav에 email뜨게 하는 함수
+  showID = (x) => {
+    this.setState({ email: x });
+  };
+
+  handleLogin = () => {
+    this.setState({ shownLogin: !this.state.shownLogin });
   };
 
   render() {
+    const { shownCart, shownLogin } = this.state;
+
     return (
       <>
-        <nav className={this.props.fixedNav ? "Nav Fixed" : "Nav"}>
+        {shownCart && <Cart />}
+        {shownLogin && (
+          <Login showID={this.showID} handleLogin={this.handleLogin} />
+        )}
+        <nav className={this.props.fixedNav ? "NavFixed" : "Nav"}>
           <ul className="navList">
             <div className="navLeft">
               <li>
-                <Link to="/" onClick={this.openNav}>
-                  제품보기
-                </Link>
+                <Link onClick={this.openNav}>제품보기</Link>
               </li>
               <li>
-                <Link to="/">읽기</Link>
+                <Link>읽기</Link>
               </li>
               <li>
-                <Link to="/">스토어</Link>
+                <Link>스토어</Link>
               </li>
               <li>
-                <Link to="/">검색</Link>
+                <Link>검색</Link>
               </li>
             </div>
             <div className="navRight">
               <li>
-                <Link to="/">로그인</Link>
+                <Link onClick={this.handleLogin}>
+                  {this.state.email ? this.state.email : "로그인"}
+                </Link>
               </li>
-              <button className="cartDot"></button>
+              <button className="cartDot" onClick={this.showCart}></button>
             </div>
           </ul>
         </nav>
@@ -62,24 +92,16 @@ class Nav extends React.Component {
             <ul className="topList">
               <div className="topCategory">
                 <li>
-                  <Link className="topListLink" to="/">
-                    제품보기
-                  </Link>
+                  <Link className="topListLink">제품보기</Link>
                 </li>
                 <li>
-                  <Link className="topListLink" to="/">
-                    읽기
-                  </Link>
+                  <Link className="topListLink">읽기</Link>
                 </li>
                 <li>
-                  <Link className="topListLink" to="/">
-                    스토어
-                  </Link>
+                  <Link className="topListLink">스토어</Link>
                 </li>
                 <li>
-                  <Link className="topListLink" to="/">
-                    검색
-                  </Link>
+                  <Link className="topListLink">검색</Link>
                 </li>
               </div>
               <div className="btnContainer">
@@ -123,36 +145,26 @@ class Nav extends React.Component {
               <li>
                 <Link
                   className="panelLink"
-                  to="/"
+                  to="/skin"
                   onMouseEnter={this.openSecond}
                 >
                   스킨
                 </Link>
               </li>
               <li>
-                <Link className="panelLink" to="/">
-                  바디&핸드
-                </Link>
+                <Link className="panelLink">바디&핸드</Link>
               </li>
               <li>
-                <Link className="panelLink" to="/">
-                  향수
-                </Link>
+                <Link className="panelLink">향수</Link>
               </li>
               <li>
-                <Link className="panelLink" to="/">
-                  홈
-                </Link>
+                <Link className="panelLink">홈</Link>
               </li>
               <li>
-                <Link className="panelLink" to="/">
-                  키트&여행 제품
-                </Link>
+                <Link className="panelLink">키트&여행 제품</Link>
               </li>
               <li>
-                <Link className="panelLink" to="/">
-                  기프트가이드
-                </Link>
+                <Link className="panelLink">기프트가이드</Link>
               </li>
             </ul>
             <div className="orderHistory">최근 주문 내역</div>
