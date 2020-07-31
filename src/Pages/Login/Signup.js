@@ -54,7 +54,7 @@ class Signup extends Component {
   };
 
   handlesignUP = (e) => {
-    fetch("http://10.58.7.53:8000/user/sign-up", {
+     fetch("http://10.58.1.133:8000/user/sign-up", {
       method: "POST",
       body: JSON.stringify({
         email: this.state.email,
@@ -63,8 +63,9 @@ class Signup extends Component {
         last_name: this.state.lastname,
       }),
     })
-      .then((res) => res.json())
-      .then((res) => {
+      .then(res => res.json())
+      .then(res => {
+        console.log(res)
         if (res.token) {
           localStorage.setItem("aesop", res.token);
           alert("회원가입을 환영합니다.");
