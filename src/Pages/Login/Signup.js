@@ -53,7 +53,7 @@ class Signup extends Component {
     });
   };
 
-  handleSingUP = (e) => {
+  handlesignUP = (e) => {
     fetch("http://10.58.7.53:8000/user/sign-up", {
       method: "POST",
       body: JSON.stringify({
@@ -68,7 +68,7 @@ class Signup extends Component {
         if (res.token) {
           localStorage.setItem("aesop", res.token);
           alert("회원가입을 환영합니다.");
-          this.props.history.push("/Main");
+          this.props.history.push("/");
         } else {
           alert("이메일과 비밀번호를 확인해주세요.");
         }
@@ -173,7 +173,7 @@ class Signup extends Component {
             </div>
           </div>
           <button
-            onClick={this.handleSingUP}
+            onClick={this.handlesignUP}
             className={
               this.state.email.length > 5 &&
               this.state.pw === this.state.pwconfirm &&
@@ -184,7 +184,7 @@ class Signup extends Component {
             }
             type="submit"
           >
-            <div className="btnContent">
+            <div className="btnContent ">
               <span className="btnLabel">등록</span>
             </div>
           </button>
