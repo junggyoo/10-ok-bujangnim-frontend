@@ -1,0 +1,46 @@
+@import "./src/Common.scss";
+
+.Productslider {
+  .light {
+    background-color: $lightColor;
+  }
+
+  .dark {
+    background-color: $grayColor;
+  }
+
+  .SliderContainer {
+    display: flex;
+    overflow: hidden;
+    color: $fontDark;
+
+    .sliderContents {
+      position: relative;
+
+      .sliderContensWrap {
+        display: flex;
+        position: absolute;
+
+        .slick-next {
+          left: 1320px;
+        }
+
+        .slick-prev:before {
+          background-color: $fontDark;
+          content: "<";
+          padding: 30px;
+        }
+
+        .slick-next:before {
+          background-color: $fontDark;
+          content: ">";
+          padding: 30px;
+        }
+
+        .slick-disabled {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

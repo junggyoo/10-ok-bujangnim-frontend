@@ -1,0 +1,44 @@
+@import "./src/Common.scss";
+
+.Recommendproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 630px;
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 420px;
+    height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .productInfo {
+    padding-bottom: 40px;
+
+    .name {
+      font-weight: normal;
+      color: $fontDark;
+      text-align: center;
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+    .sizePrice {
+      padding: 0 40px;
+
+      span {
+        color: $fontLight;
+      }
+      .seperator {
+        margin: 0 5px;
+      }
+    }
+  }
+}

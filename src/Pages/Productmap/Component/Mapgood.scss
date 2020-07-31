@@ -1,0 +1,225 @@
+@import "./src/Common.scss";
+$font-family: "Suisse Regular", sans-serif;
+
+.subcategoryProducts {
+  width: calc(100% * 1 / 3);
+  height: 790px;
+
+  .subcatProductWrapper:hover {
+    height: 100%;
+    display: flex;
+    background-color: $lightGray;
+    flex-direction: column;
+    position: relative;
+    transition: background-color 300ms, height 800ms 400ms, width 900ms 400ms;
+  }
+
+  .subcatProductWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+    .pictureImgLinkControl {
+      color: inherit;
+      text-decoration: none;
+      width: 100%;
+      height: 490px;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+
+      .pictureImgLinkTag {
+        width: 100;
+        margin: 0 auto;
+      }
+
+      .productPicture {
+        width: 330px;
+        height: 400px;
+        padding: 50px 0 0 0;
+        display: flex;
+
+        .pictureImg {
+          opacity: 1;
+          width: 100%;
+          justify-items: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .productSizePrice {
+      padding: 0 40px;
+      height: 90px;
+      text-decoration: none;
+
+      .textdeco {
+        text-decoration: none;
+
+        .productSizePriceName {
+          color: #252525;
+          margin-bottom: 10px;
+          font-size: 14px;
+          text-align: center;
+          font-family: "Suisse Medium", sans-serif;
+        }
+
+        .productSizePriceInfo {
+          color: #666;
+          display: flex;
+          font-size: 14px;
+          font-family: $font-family;
+          justify-content: center;
+
+          .spanSlash {
+            margin: 0 5px;
+            color: #33333333;
+          }
+        }
+      }
+    }
+
+    .productDetailLink {
+      .productDetails {
+        padding: 0 40px 30px;
+
+        .productList {
+          border-top: 2px solid #252525;
+          width: 100%;
+
+          .productDetailsListItem {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+            display: flex;
+
+            .productDetailsTitle {
+              color: #252525;
+              font-size: 14px;
+              font-family: "Suisse Medium", sans-serif;
+              margin: 0 20px 0 0;
+            }
+
+            .productDetailsContent {
+              color: #666666;
+              font-size: 14px;
+              font-family: $font-family;
+            }
+          }
+        }
+      }
+    }
+
+    .productWrapper {
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      opacity: 1;
+      margin-top: -30px;
+      width: 100%;
+
+      .productCartBtn {
+        color: $lightColor;
+        background-color: $fontDark;
+        position: relative;
+        padding: 21px 23px;
+        width: 100%;
+        height: 60px;
+
+        .btnContent {
+          display: flex;
+          flex-direction: column;
+
+          .btnLabel {
+            font-size: 14px;
+            display: block;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .noneBtnLabel {
+            background-color: #999;
+            font-size: 14px;
+            display: none;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .btnLabelAction {
+            display: hidden;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 1s;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .noneBtnLabelAction {
+            background-color: #999;
+            opacity: 0;
+            transform: translateY(-200%);
+            display: none;
+            transition: all 1s;
+            font-family: "Suisse Medium", sans-serif;
+          }
+        }
+      }
+    }
+
+    .noneproductWrapper {
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      margin-top: -30px;
+      width: 100%;
+      display: hidden;
+
+      .productCartBtn {
+        background-color: $fontDark;
+        position: relative;
+        padding: 21px 23px;
+        width: 100%;
+        height: 60px;
+
+        .btnContent {
+          display: flex;
+          flex-direction: column;
+
+          .btnLabel {
+            font-size: 14px;
+            display: block;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .noneBtnLabel {
+            background-color: #999;
+            font-size: 14px;
+            display: none;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .btnLabelAction {
+            // transform: translateY(100%);
+            // display: block;
+            transition: all 1s;
+            font-family: "Suisse Medium", sans-serif;
+          }
+
+          .noneBtnLabelAction {
+            background-color: #999;
+            // opacity: 0;
+            // transform: translateY(100%);
+            display: none;
+            transition: all 1s;
+            font-family: "Suisse Medium", sans-serif;
+          }
+        }
+      }
+    }
+
+    .hoverState:hover {
+      display: block;
+    }
+
+    .nonehoverState {
+      display: none;
+    }
+  }
+}

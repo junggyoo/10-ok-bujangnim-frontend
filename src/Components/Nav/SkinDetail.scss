@@ -1,0 +1,25 @@
+@import "../../Common.scss";
+
+.SkinDetail {
+  width: calc(100% * 1 / 3);
+  top: 0;
+  left: calc(100% * 2 / 3);
+  animation: 1000ms 1ms slide-right--100 cubic-bezier(0.32, 0.24, 0.15, 1)
+    forwards;
+  transform: translate(-100%, 0);
+  background-color: $lightColor;
+  height: 100%;
+  position: fixed;
+  padding-top: 69px;
+  border-left: 1px solid $grayColor;
+
+  @keyframes slide-right--100 {
+    0% {
+      transform: translate(-100%, 0);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import "./src/Common.scss";
+
+.Productfilternav {
+  width: 100%;
+  .logoContainer {
+    cursor: pointer;
+    svg {
+      width: 100px;
+      top: 195px;
+      position: absolute;
+      left: 25px;
+    }
+  }
+
+  .productTitleContainer {
+    background-color: $lightColor;
+    margin-top: 150px;
+  }
+
+  .productTitleBox {
+    display: flex;
+    margin: 0 25px;
+    padding-top: 25px;
+
+    .productTitle {
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      color: $fontDark;
+      font-size: x-large;
+      margin: 0;
+      height: 80px;
+      top: 50%;
+    }
+  }
+
+  .productFilterContainer {
+    background-color: #eaeadd;
+
+    .productFilterBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 25px;
+
+      .productFilterNav {
+        display: flex;
+        margin: 0;
+        padding: 45px 0;
+        padding-left: 0;
+
+        li {
+          padding: 0 10px;
+          font-size: 14px;
+          color: $fontLight;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          & span {
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+
+          & span:after {
+            display: block;
+            content: "";
+            border-bottom: 1px solid black;
+            transform: scaleX(0);
+            transition: transform 300ms ease-in-out;
+          }
+
+          & span:hover:after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+
+          & .start {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+
+      .filterBtn {
+        background-color: #eaeadd;
+        border: 0.5px solid gray;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $fontDark;
+          color: white;
+          fill: white;
+        }
+
+        .filterBox {
+          display: flex;
+          align-items: center;
+
+          .btnIcon {
+            width: 15px;
+            height: 10px;
+            margin-left: 23px;
+          }
+        }
+      }
+    }
+    .productFilter .filterBtn {
+      height: 60px;
+      padding: 21px 23px;
+    }
+  }
+}
