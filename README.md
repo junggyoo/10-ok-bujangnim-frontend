@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aesop 클론 프로젝트 (Front-End)
 
-## Available Scripts
+## 프로젝트 소개🙌
 
-In the project directory, you can run:
+- 최고 품질의 스킨, 헤어 그리고 바디케어 제품을 만드는 Aesop 웹 사이트 클론 프로젝트
 
-### `npm start`
+## 개발 기간📆
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 2020년 7월 20일 ~ 2020년 7월 31일(12일)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 팀원🐙
 
-### `npm test`
+- 10기 배정규
+- 10기 최운정
+- 10기 송수호
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 기술 스택 및 구현 기능🛠
 
-### `npm run build`
+### 기술 스택
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- React Router
+- RESTful API
+- JavaScript
+- Scss
+- Slick.js
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 구현 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 로그인, 회원가입
+- 3단 네비게이션 바 구현 
+- React Router를 이용한 페이지 이동 기능 구현
+- 동적 라우팅 구현
+- 2중 map 함수를 사용한 상품 리스트 페이지 출력 
+- 페이지네이션 구현 
+- Fetch API 를 사용해 백엔드와 통신 구현
+- Slick.js를 활용한 슬라이드 구현
+- 찜하기, 장바구니 구현 
